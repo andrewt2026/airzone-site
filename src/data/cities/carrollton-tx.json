@@ -1,0 +1,164 @@
+{
+  "slug": "carrollton-tx",
+  "name": "Carrollton",
+  "seo": {
+    "title": "AC Repair & HVAC Services In Carrollton, TX",
+    "description": "HVAC services in Carrollton — AC repair, installation & heating. Veteran-owned, NATE-certified, 24/7 emergency.",
+    "robots": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "canonical": "https://airzoneexperts.com/carrollton-tx/",
+    "og": {
+      "og:locale": "en_US",
+      "og:type": "article",
+      "og:title": "AC Repair & HVAC Services In Carrollton, TX",
+      "og:description": "HVAC services in Carrollton — AC repair, installation & heating. Veteran-owned, NATE-certified, 24/7 emergency.",
+      "og:url": "https://airzoneexperts.com/carrollton-tx/",
+      "og:site_name": "Air Zone Experts",
+      "og:updated_time": "2026-11-06T10:56:48-06:00",
+      "og:image": "https://airzoneexperts.com/wp-content/uploads/How-to-repair-and-replace-Image.jpg",
+      "og:image:secure_url": "https://airzoneexperts.com/wp-content/uploads/How-to-repair-and-replace-Image.jpg",
+      "og:image:width": "1195",
+      "og:image:height": "896",
+      "og:image:alt": "How to repair and replace Image",
+      "og:image:type": "image/jpeg"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "AC Repair & HVAC Services In Carrollton, TX",
+      "twitter:description": "HVAC services in Carrollton — AC repair, installation & heating. Veteran-owned, NATE-certified, 24/7 emergency.",
+      "twitter:image": "https://airzoneexperts.com/wp-content/uploads/How-to-repair-and-replace-Image.jpg",
+      "twitter:label1": "Time to read",
+      "twitter:data1": "Less than a minute"
+    }
+  },
+  "heroImage": "/wp-content/uploads/How-to-repair-and-replace-Image.jpg",
+  "heroTitleHtml": "<h1>AC Repair &amp; HVAC Services in Carrollton, TX</h1>",
+  "heroIntroHtml": "<p>Carrollton is one of the few cities in North Texas that straddles three counties — Dallas, Denton, and Collin — with a Historic Downtown dating back to the 1800s sitting alongside modern development, meaning Air Zone Experts regularly works on both century-old ductwork and brand-new installs in the same city. We’ve spent more than 20 years as a family-owned, veteran-owned HVAC company serving Carrollton across all three counties, always with upfront pricing and NATE-certified technicians.</p>",
+  "servicesIntroHtml": "<h2>Our Residential and Commercial HVAC Services in Carrollton</h2>\n<p><span>Air Zone Experts offers comprehensive heating and cooling solutions for both </span><a href=\"/hvac-contractor/\">residential HVAC services</a><span> and </span><a href=\"/commercial-hvac/\">commercial HVAC services</a><span> designed to keep your Carrollton </span><span>home or business comfortable in every season.</span></p>",
+  "acHeadingHtml": "<h4>Air Conditioning Services in Carrollton, TX</h4>",
+  "acCards": [
+    {
+      "title": "Air Conditioning",
+      "href": "/air-conditioning-repair-service/",
+      "html": "<p>Complete AC care for Carrollton homes in Dallas, Denton, and Collin counties, from older ranch houses near the Historic Downtown square to newer builds off Trinity Mills.</p>"
+    },
+    {
+      "title": "Emergency HVAC Services",
+      "href": "/emergency-hvac-service/",
+      "html": "<p>Carrollton residents can call for <a href=\"/emergency-hvac-service/\">24/7 emergency heating and cooling repair</a> when an AC dies in July or a furnace stops on a freezing night.</p>"
+    },
+    {
+      "title": "Air Conditioning Repair",
+      "href": "/air-conditioning-repair-service/",
+      "html": "<p>From original 1970s units to newer systems, our Carrollton AC repairs fix worn contactors, low refrigerant, clogged condensate lines, and failing compressors.</p>"
+    },
+    {
+      "title": "Air Conditioning Replacement",
+      "href": "/air-conditioning-installation/",
+      "html": "<p>Carrollton AC replacements swap outdated R-22 units for efficient systems matched to each home’s size, insulation, and existing ductwork.</p>"
+    },
+    {
+      "title": "Air Duct Repair & Replacement",
+      "href": "/air-duct-repair-replacement/",
+      "html": "<p>We restore <a href=\"/air-duct-repair-replacement/\">aging ductwork in Carrollton homes</a>, fixing crushed, disconnected, or leaking runs that leave upstairs rooms warm.</p>"
+    }
+  ],
+  "heatingHeadingHtml": "<h4>Heating Services in Carrollton, TX</h4>",
+  "heatingCards": [
+    {
+      "title": "Heating",
+      "href": "/heating-service/",
+      "html": "<p>Carrollton households trust us with gas furnaces, heat pumps, and electric heat, from pre-winter tune-ups to full system changeouts.</p>"
+    },
+    {
+      "title": "Heater Repair",
+      "href": "/heating-service/",
+      "html": "<p>Our technicians provide <a href=\"/heating-service/\">Carrollton heater repair</a> for pilot and ignition failures, short cycling, burning odors, and blower problems.</p>"
+    },
+    {
+      "title": "Heater Replacements",
+      "href": "/heating-service/",
+      "html": "<p>When repairs stop making sense, we offer <a href=\"/heating-service/\">furnace replacement options</a> that improve efficiency and safety in Carrollton’s older homes.</p>"
+    },
+    {
+      "title": "Heater Installation",
+      "href": "/heating-service/",
+      "html": "<p>From room additions to full upgrades, our <a href=\"/heating-service/\">heating installation services</a> in Carrollton include proper sizing, venting, and thermostat setup.</p>"
+    }
+  ],
+  "servingHtml": "<h2>Serving Carrollton</h2>\n<p>We handle HVAC projects throughout Carrollton, from historic downtown to modern developments. Our NATE-certified technicians provide expert heating and cooling solutions for this unique tri-county city’s homes and businesses.</p>\n<p><strong>Carrollton Fun Fact:</strong> Straddling Dallas, Denton, and Collin counties, Carrollton’s Historic Downtown features buildings from the 1800s and hosts the annual Festival at the Switchyard!</p>",
+  "mapEmbedSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85758.35818110449!2d-96.92198128538382!3d32.98616952922438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c212bbbdd571f%3A0x9c1efd49b3841d5d!2sCarrollton%2C%20TX%2C%20USA!5e1!3m2!1sen!2sin!4v1772186842457!5m2!1sen!2sin",
+  "reviewsHtml": "<h2>Customer Reviews</h2>\n<p>See what our satisfied Carrollton customers say with over 400 five-star ratings as Little Elm’s top HVAC contractor. Read our <a href=\"/reviews/\">reviews</a> to learn why families throughout Carrollton, TX trust Air Zone Experts.</p>",
+  "projectsHtml": "<style>body:not(.et-fb) .et_pb_section:has(.azx-projects-slot):not(:has(.azx-projects)){display:none!important}</style>\n<div class=\"azx-projects-slot\"></div>",
+  "faqGroups": [
+    {
+      "titleHtml": "<h3>HVAC Services in Carrollton</h3>",
+      "items": [
+        {
+          "q": "What cooling and heating services are offered in Carrollton, TX?",
+          "a": "<p>Whether it’s cooling, heating, or ductwork, AC repair, AC replacement and installation, duct repair and replacement, complete heating service, and around-the-clock emergency availability.</p>"
+        },
+        {
+          "q": "Does Air Zone Experts work on commercial properties as well as homes in Carrollton?",
+          "a": "<p>Yes — homes and businesses throughout Carrollton, including commercial properties near the Historic Downtown Switchyard district, all get full service.</p>"
+        },
+        {
+          "q": "How transparent is your pricing in Carrollton?",
+          "a": "<p>Every job begins with a real inspection, followed by an upfront quote. You approve the cost before we lift a wrench, and it doesn’t change once we start.</p>"
+        }
+      ]
+    },
+    {
+      "titleHtml": "<h3>Company &amp; Credentials</h3>",
+      "items": [
+        {
+          "q": "What should I check before hiring an HVAC company in Carrollton, TX?",
+          "a": "<p>Yes, on both counts. Adrian Racovei, the owner, is personally NATE-certified and EPA Section 608-certified.</p>"
+        },
+        {
+          "q": "Has Air Zone Experts worked in Carrollton, TX?",
+          "a": "<p>Since 2008, family-owned and veteran-owned — serving this tri-county city throughout its growth.</p>"
+        },
+        {
+          "q": "How many five-star reviews does Air Zone Experts have serving Carrollton?",
+          "a": "<p>Absolutely — family-owned and veteran-owned status backed by 400+ five-star reviews, most of them from customer referrals.</p>"
+        }
+      ]
+    },
+    {
+      "titleHtml": "<h3>Maintenance &amp; Repairs</h3>",
+      "items": [
+        {
+          "q": "Can I get emergency heating repair on weekends in Carrollton, TX?",
+          "a": "<p>Around the clock, yes — anywhere in Carrollton.<br/>\nCan you service HVAC systems in Carrollton’s Historic</p>"
+        },
+        {
+          "q": "Downtown buildings, some dating to the 1800s, as well as newer homes?",
+          "a": "<p>Yes. Carrollton’s Historic Downtown features buildings from the 1800s alongside modern development, and we size and service systems for both older and newer construction correctly.</p>"
+        },
+        {
+          "q": "How quickly can a technician fix my AC for Carrollton homes?",
+          "a": "<p>Fast, in most cases — many repairs are diagnosed and fixed within one to three hours. More complex issues or backordered parts can extend that, but we’ll always tell you upfront what to expect.</p>"
+        }
+      ]
+    },
+    {
+      "titleHtml": "<h3>Coverage &amp; Equipment</h3>",
+      "items": [
+        {
+          "q": "Do you service homes and businesses across all three counties Carrollton spans — Dallas, Denton, and Collin?",
+          "a": "<p>Yes. We cover Carrollton regardless of which county line your property falls on.</p>"
+        },
+        {
+          "q": "Is there quick AC repair turnaround in Carrollton, TX?",
+          "a": "<p>Yes, in most situations. The earlier you call, the better our odds of finishing the job that same day.</p>"
+        },
+        {
+          "q": "Is Trane a good AC brand for Carrollton, TX?",
+          "a": "<p>We’re Trane-authorized, and it shows in our installs. though our technicians service every other major brand just as comfortably.</p>"
+        }
+      ]
+    }
+  ],
+  "contactHtml": "<h2>Contact Air Zone Experts</h2>\n<p>Ready to experience the Air Zone Experts difference? Contact our <a href=\"/contact-hvac-installer/\">HVAC company </a>today for fast, reliable service in Carrollton. Call (214) 430-9059 for immediate assistance.</p>",
+  "bodyClass": "wp-singular page-template-default page page-id-20251114165646 page-child parent-pageid-38014 custom-background wp-theme-Divi wp-child-theme-Astoundz et-tb-has-template et-tb-has-body et-tb-has-footer dbdb_divi_2_4_up desktop et_button_no_icon et_pb_button_helper_class et_non_fixed_nav et_show_nav et_secondary_nav_enabled et_secondary_nav_only_menu et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_cover_background et_pb_gutter et_pb_gutters2 et_pb_pagebuilder_layout et_divi_theme et-db"
+}

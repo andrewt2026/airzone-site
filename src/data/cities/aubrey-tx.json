@@ -1,0 +1,164 @@
+{
+  "slug": "aubrey-tx",
+  "name": "Aubrey",
+  "seo": {
+    "title": "AC Repair & HVAC Services In Aubrey, TX",
+    "description": "HVAC services in Aubrey — AC repair, installation & heating. Veteran-owned, NATE-certified, upfront pricing.",
+    "robots": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "canonical": "https://airzoneexperts.com/aubrey-tx/",
+    "og": {
+      "og:locale": "en_US",
+      "og:type": "article",
+      "og:title": "AC Repair & HVAC Services In Aubrey, TX",
+      "og:description": "HVAC services in Aubrey — AC repair, installation & heating. Veteran-owned, NATE-certified, upfront pricing.",
+      "og:url": "https://airzoneexperts.com/aubrey-tx/",
+      "og:site_name": "Air Zone Experts",
+      "og:updated_time": "2026-11-06T10:57:11-06:00",
+      "og:image": "https://airzoneexperts.com/wp-content/uploads/IMG-1024-1-1.jpeg",
+      "og:image:secure_url": "https://airzoneexperts.com/wp-content/uploads/IMG-1024-1-1.jpeg",
+      "og:image:width": "1024",
+      "og:image:height": "612",
+      "og:image:alt": "IMG 1024 (1)",
+      "og:image:type": "image/jpeg"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "AC Repair & HVAC Services In Aubrey, TX",
+      "twitter:description": "HVAC services in Aubrey — AC repair, installation & heating. Veteran-owned, NATE-certified, upfront pricing.",
+      "twitter:image": "https://airzoneexperts.com/wp-content/uploads/IMG-1024-1-1.jpeg",
+      "twitter:label1": "Time to read",
+      "twitter:data1": "Less than a minute"
+    }
+  },
+  "heroImage": "/wp-content/uploads/IMG-1024-1-1.jpeg",
+  "heroTitleHtml": "<h1>AC Repair &amp; HVAC Services in Aubrey, TX</h1>",
+  "heroIntroHtml": "<p>Known as “Horse Country USA,” Aubrey’s surrounding ranch properties often mean larger homes and outbuildings with different HVAC needs than a typical subdivision — and Air Zone Experts sizes and services both correctly. We’ve spent more than 20 years as a family-owned, veteran-owned HVAC company serving Aubrey’s historic downtown square as well as the newer subdivisions along Highway 380, always with upfront pricing and NATE-certified technicians.</p>",
+  "servicesIntroHtml": "<h2>Our Residential and Commercial HVAC Services in Aubrey</h2>\n<p><span>Air Zone Experts offers comprehensive heating and cooling solutions for both </span><a href=\"/hvac-contractor/\">residential HVAC services</a><span> and </span><a href=\"/commercial-hvac/\">commercial HVAC services</a><span> designed to keep your Aubrey </span><span>home or business comfortable in every season.</span></p>",
+  "acHeadingHtml": "<h4>Air Conditioning Services in Aubrey, TX</h4>",
+  "acCards": [
+    {
+      "title": "Air Conditioning",
+      "href": "/air-conditioning-repair-service/",
+      "html": "<p>AC service for Aubrey homes, from newer subdivisions to rural properties in Texas horse country, including repairs and full replacements.</p>"
+    },
+    {
+      "title": "Emergency HVAC Services",
+      "href": "/emergency-hvac-service/",
+      "html": "<p>Our <a href=\"/emergency-hvac-service/\">emergency HVAC service in Aubrey</a> helps residents get heat or cooling back quickly, even outside normal hours.</p>"
+    },
+    {
+      "title": "Air Conditioning Repair",
+      "href": "/air-conditioning-repair-service/",
+      "html": "<p>Dusty rural conditions around Aubrey clog condenser coils, and our AC repairs also cover refrigerant leaks, capacitors, and drain backups.</p>"
+    },
+    {
+      "title": "Air Conditioning Replacement",
+      "href": "/air-conditioning-installation/",
+      "html": "<p>Aubrey AC replacements use efficient, correctly sized systems for both new subdivisions and older country homes.</p>"
+    },
+    {
+      "title": "Air Duct Repair & Replacement",
+      "href": "/air-duct-repair-replacement/",
+      "html": "<p>Our <a href=\"/air-duct-repair-replacement/\">Aubrey ductwork repairs</a> fix leaks and damaged runs that waste energy in hot attics and crawlspaces.</p>"
+    }
+  ],
+  "heatingHeadingHtml": "<h4>Heating Services in Aubrey, TX</h4>",
+  "heatingCards": [
+    {
+      "title": "Heating",
+      "href": "/heating-service/",
+      "html": "<p>Aubrey homes heat with everything from heat pumps to propane furnaces, and we service, repair, and replace each type.</p>"
+    },
+    {
+      "title": "Heater Repair",
+      "href": "/heating-service/",
+      "html": "<p>We provide <a href=\"/heating-service/\">Aubrey heater repair</a> for heat pumps, gas and propane furnaces, ignition problems, and blower failures.</p>"
+    },
+    {
+      "title": "Heater Replacements",
+      "href": "/heating-service/",
+      "html": "<p>Our <a href=\"/heating-service/\">heating replacements for Aubrey homes</a> include efficient heat pumps and furnaces suited to rural and suburban properties.</p>"
+    },
+    {
+      "title": "Heater Installation",
+      "href": "/heating-service/",
+      "html": "<p>We handle <a href=\"/heating-service/\">new heater installations</a> in Aubrey for new builds, additions, and system upgrades with proper sizing.</p>"
+    }
+  ],
+  "servingHtml": "<h2>Serving Aubrey</h2>\n<p>We handle HVAC projects throughout Aubrey’s country homes and newer developments. Our NATE-certified technicians provide expert heating and cooling solutions for this community’s unique blend of rural properties and modern construction.</p>\n<p><strong>Aubrey Fun Fact:</strong> Where country meets city, Aubrey maintains its agricultural roots and hosts the annual Pecan Festival, offering authentic Texas living just 45 minutes from downtown Dallas!</p>",
+  "mapEmbedSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156962.28471900124!2d-96.95251425857656!3d33.16491089895584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c352505d81d41%3A0xd509f129b1217693!2sAubrey%2C%20TX%2C%20USA!5e1!3m2!1sen!2sin!4v1772186783388!5m2!1sen!2sin",
+  "reviewsHtml": "<h2>Customer Reviews</h2>\n<p>See what our satisfied Aubrey customers say with over 400 five-star ratings as Little Elm’s top HVAC contractor. Read our <a href=\"/reviews/\">reviews</a> to learn why families throughout Aubrey, TX trust Air Zone Experts.</p>",
+  "projectsHtml": "<style>body:not(.et-fb) .et_pb_section:has(.azx-projects-slot):not(:has(.azx-projects)){display:none!important}</style>\n<div class=\"azx-projects-slot\"></div>",
+  "faqGroups": [
+    {
+      "titleHtml": "<h3>HVAC Services in Aubrey</h3>",
+      "items": [
+        {
+          "q": "What HVAC repairs and installs are offered in Aubrey and nearby areas?",
+          "a": "<p>In Aubrey, we handle the complete range: cooling repair and replacement, ductwork, heating service in all its forms, and 24/7 emergency service.</p>"
+        },
+        {
+          "q": "Is emergency AC service available at night in the Aubrey area?",
+          "a": "<p>Yes, day or night. Our emergency HVAC service runs 24/7 across all of Aubrey.</p>"
+        },
+        {
+          "q": "How much should I expect to pay for AC repair in Aubrey homes?",
+          "a": "<p>We never guess at a price — a technician examines the system, then presents a clear cost. What we quote is what shows up on the invoice, nothing more.</p>"
+        }
+      ]
+    },
+    {
+      "titleHtml": "<h3>Company &amp; Credentials</h3>",
+      "items": [
+        {
+          "q": "Are HVAC contractors required to be licensed and insured in Aubrey before hiring them?",
+          "a": "<p>Yes. Texas requires a state ACR contractor license and proof of insurance before anyone can legally operate an HVAC business here. Air Zone Experts holds both, and owner Adrian Racovei carries NATE and EPA Section 608 certifications too.</p>"
+        },
+        {
+          "q": "Since when has your company served Aubrey homeowners?",
+          "a": "<p>Since 2008, family-owned and veteran-owned — serving Aubrey through its growth from a small horse-country town into a fast-growing community.</p>"
+        },
+        {
+          "q": "Does Air Zone Experts have strong customer reviews among Aubrey homeowners?",
+          "a": "<p>Yes, on both counts — family-owned and veteran-owned, reflected in over 400 five-star reviews and roughly 85% of our business coming from word of mouth.</p>"
+        }
+      ]
+    },
+    {
+      "titleHtml": "<h3>Maintenance &amp; Repairs</h3>",
+      "items": [
+        {
+          "q": "Do you service homes on Aubrey's horse ranches and rural properties, not just in-town subdivisions?",
+          "a": "<p>Yes. Aubrey’s rural ranch properties often have larger homes and outbuildings with unique HVAC needs, and we size and service systems for both ranch properties and in-town homes.</p>"
+        },
+        {
+          "q": "What's the recommended service schedule in Aubrey homes?",
+          "a": "<p>Two visits a year does it — one visit ahead of summer heat, one ahead of winter cold.</p>"
+        },
+        {
+          "q": "Will my HVAC repair be finished in one visit in the Aubrey area?",
+          "a": "<p>In most cases, yes — one visit is enough, usually within a few hours. Occasionally a part has to be ordered, in which case we’ll explain the timeline clearly before you commit.</p>"
+        }
+      ]
+    },
+    {
+      "titleHtml": "<h3>Coverage &amp; Equipment</h3>",
+      "items": [
+        {
+          "q": "Do you serve the newer subdivisions built up along Highway 380 near Aubrey?",
+          "a": "<p>Yes. Highway 380 has brought significant new growth to Aubrey, and we install and service systems in both these newer developments and Aubrey’s historic downtown.</p>"
+        },
+        {
+          "q": "How fast can an HVAC company respond in the Aubrey area?",
+          "a": "<p>Same-day is the goal for most calls. Reach out early and we’ll do what we can to make it happen before the day is out.</p>"
+        },
+        {
+          "q": "What HVAC equipment brands are recommended for Aubrey homes?",
+          "a": "<p>Trane is where our authorized-dealer expertise lives, but that doesn’t limit us — we repair and install every major manufacturer too.</p>"
+        }
+      ]
+    }
+  ],
+  "contactHtml": "<h2>Contact Air Zone Experts</h2>\n<p>Ready to experience the Air Zone Experts difference? Contact our <a href=\"/contact-hvac-installer/\">HVAC company </a>today for fast, reliable service in Aubrey. Call (214) 430-9059 for immediate assistance.</p>",
+  "bodyClass": "wp-singular page-template-default page page-id-20251114165658 page-child parent-pageid-38014 custom-background wp-theme-Divi wp-child-theme-Astoundz et-tb-has-template et-tb-has-body et-tb-has-footer dbdb_divi_2_4_up desktop et_button_no_icon et_pb_button_helper_class et_non_fixed_nav et_show_nav et_secondary_nav_enabled et_secondary_nav_only_menu et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_cover_background et_pb_gutter et_pb_gutters2 et_pb_pagebuilder_layout et_divi_theme et-db"
+}

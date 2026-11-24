@@ -1,0 +1,931 @@
+
+	.mysticky-welcomebar-fixed , .mysticky-welcomebar-fixed * {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.mysticky-welcomebar-fixed {
+		background-color: #ef3c13;
+		font-family: Montserrat;
+		position: fixed;
+		left: 0;
+		right: 0;
+		z-index: 9999999;
+		opacity: 0;
+	}
+    .mysticky-welcomebar-btn-a.button-has-msb-shadow:not(.button-has-msb-3d-effect) {
+        box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.35);
+    }
+    .mysticky-welcomebar-btn-a.button-has-msb-shadow.button-has-msb-3d-effect:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 8px 20px -2px rgba(0, 0, 0, 0.4);
+        left: 0;
+        top: 0;
+    }
+	.mysticky-welcomebar-fixed-wrap {
+		min-height: 60px;
+		padding: 20px 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+	}
+	.mysticky-welcomebar-fixed-wrap .mysticky-welcomebar-content {
+		flex: 1;
+		text-align:center;
+	}
+	.mysticky-welcomebar-animation {
+		-webkit-transition: all 1s ease 0s;
+		-moz-transition: all 1s ease 0s;
+		transition: all 1s ease 0s;
+	}
+	.mysticky-welcomebar-position-top {
+		top:0;
+	}
+	.mysticky-welcomebar-position-bottom {
+		bottom:0;
+	}
+	.mysticky-welcomebar-position-top.mysticky-welcomebar-entry-effect-slide-in {
+		top: -60px;
+	}
+	.mysticky-welcomebar-position-bottom.mysticky-welcomebar-entry-effect-slide-in {
+		bottom: -60px;
+	}
+	.mysticky-welcomebar-entry-effect-fade {
+		opacity: 0;
+	}
+	.mysticky-welcomebar-entry-effect-none {
+		display: none;
+	}
+	.mysticky-welcomebar-fixed .mysticky-welcomebar-content p a{
+		text-decoration: underline;
+		text-decoration-thickness: 1px;
+		text-underline-offset: 0.25ch;
+	}
+	.mysticky-welcomebar-fixed .mysticky-welcomebar-content p a,
+	.mysticky-welcomebar-fixed .mysticky-welcomebar-content p {
+		color: #ffffff;
+		font-size: 15px;
+		margin: 0;
+		padding: 0;
+		line-height: 1.2;
+		font-weight: 400;
+		font-family:Montserrat	}
+	.mysticky-welcomebar-fixed .mysticky-welcomebar-btn {
+		/*padding-left: 30px;*/
+		display: none;
+		line-height: 1;
+		margin-left: 10px;
+	}
+	.mysticky-welcomebar-fixed.mysticky-welcomebar-btn-desktop .mysticky-welcomebar-btn {
+		display: block;
+		position: relative;
+	}
+	.mysticky-welcomebar-fixed .mysticky-welcomebar-btn a {
+		background-color: #000000;
+		font-family: inherit;
+		color: #ffffff;
+		border-radius: 4px;
+		text-decoration: none;
+		display: inline-block;
+		vertical-align: top;
+		line-height: 1.2;
+		font-size: 15px;
+		font-weight: 400;
+		padding: 5px 20px;
+		white-space: nowrap;
+        position: relative;
+	}
+   :root {
+       --msb-button-hover-bg-color: #ffffff;
+       --msb-button-hover-text-color: #000000;
+       --msb-button-hover-border-color: #000000;
+       --msb-button-bg-color: #000000;
+       --msb-button-text-color: #ffffff;
+       --msb-button-effect-color: #7761DF;
+       --msb-button-border-color: #7761DF;
+       --msb-button-border-radius: 4px;
+    }
+
+	.mysticky-welcomebar-fixed .mysticky-welcomebar-close {
+		display: none;
+		vertical-align: top;
+		width: 30px;
+		height: 30px;
+		text-align: center;
+		line-height: 30px;
+		border-radius: 5px;
+		color: #000;
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		outline: none;		
+		text-decoration: none;
+		text-shadow: 0 0 0px #fff;
+		-webkit-transition: all 0.5s ease 0s;
+		-moz-transition: all 0.5s ease 0s;
+		transition: all 0.5s ease 0s;
+		-webkit-transform-origin: 50% 50%;
+		-moz-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+        align-items: center;
+        justify-content: center;
+	}
+	.mysticky-welcomebar-fixed .mysticky-welcomebar-close:hover {
+		opacity: 1;
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	.mysticky-welcomebar-fixed .mysticky-welcomebar-close span.dashicons {
+		font-size: 27px;
+	}
+	.mysticky-welcomebar-fixed.mysticky-welcomebar-showx-desktop .mysticky-welcomebar-close {
+		display: inline-flex;
+		cursor: pointer;
+	}	
+	/* Animated Buttons */
+		.mysticky-welcomebar-btn a {
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+		}
+		@-webkit-keyframes flash {
+			from,
+			50%,
+			to {
+				opacity: 1;
+			}
+
+			25%,
+			75% {
+				opacity: 0;
+			}
+		}
+		@keyframes flash {
+			from,
+			50%,
+			to {
+				opacity: 1;
+			}
+
+			25%,
+			75% {
+				opacity: 0;
+			}
+		}
+		.mysticky-welcomebar-attention-flash.animation-start .mysticky-welcomebar-btn a {
+			-webkit-animation-name: flash;
+			animation-name: flash;
+		}
+		
+		@keyframes shake {
+			from,
+			to {
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+
+			10%,
+			30%,
+			50%,
+			70%,
+			90% {
+				-webkit-transform: translate3d(-10px, 0, 0);
+				transform: translate3d(-10px, 0, 0);
+			}
+
+			20%,
+			40%,
+			60%,
+			80% {
+				-webkit-transform: translate3d(10px, 0, 0);
+				transform: translate3d(10px, 0, 0);
+			}
+		}
+
+		.mysticky-welcomebar-attention-shake.animation-start .mysticky-welcomebar-btn a {
+			-webkit-animation-name: shake;
+			animation-name: shake;
+		}
+		
+		@-webkit-keyframes swing {
+			20% {
+				-webkit-transform: rotate3d(0, 0, 1, 15deg);
+				transform: rotate3d(0, 0, 1, 15deg);
+			}
+
+			40% {
+				-webkit-transform: rotate3d(0, 0, 1, -10deg);
+				transform: rotate3d(0, 0, 1, -10deg);
+			}
+
+			60% {
+				-webkit-transform: rotate3d(0, 0, 1, 5deg);
+				transform: rotate3d(0, 0, 1, 5deg);
+			}
+
+			80% {
+				-webkit-transform: rotate3d(0, 0, 1, -5deg);
+				transform: rotate3d(0, 0, 1, -5deg);
+			}
+	
+			to {
+				-webkit-transform: rotate3d(0, 0, 1, 0deg);
+				transform: rotate3d(0, 0, 1, 0deg);
+			}
+		}
+
+		@keyframes swing {
+			20% {
+				-webkit-transform: rotate3d(0, 0, 1, 15deg);
+				transform: rotate3d(0, 0, 1, 15deg);
+			}
+
+			40% {
+				-webkit-transform: rotate3d(0, 0, 1, -10deg);
+				transform: rotate3d(0, 0, 1, -10deg);
+			}
+
+			60% {
+				-webkit-transform: rotate3d(0, 0, 1, 5deg);
+				transform: rotate3d(0, 0, 1, 5deg);
+			}
+
+			80% {
+				-webkit-transform: rotate3d(0, 0, 1, -5deg);
+				transform: rotate3d(0, 0, 1, -5deg);
+			}
+
+			to {
+				-webkit-transform: rotate3d(0, 0, 1, 0deg);
+				transform: rotate3d(0, 0, 1, 0deg);
+			}
+		}
+
+		.mysticky-welcomebar-attention-swing.animation-start .mysticky-welcomebar-btn a {
+			-webkit-transform-origin: top center;
+			transform-origin: top center;
+			-webkit-animation-name: swing;
+			animation-name: swing;
+		}
+		
+		@-webkit-keyframes tada {
+			from {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+			}
+
+			10%,
+			20% {
+				-webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+				transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+			}
+
+			30%,
+			50%,
+			70%,
+			90% {
+				-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+				transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+			}
+
+			40%,
+			60%,
+			80% {
+				-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+				transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+			}
+
+			to {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+			}
+		}
+
+		@keyframes tada {
+			from {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+			}
+
+			10%,
+			20% {
+				-webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+				transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+			}
+
+			30%,
+			50%,
+			70%,
+			90% {
+				-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+				transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+			}
+
+			40%,
+			60%,
+			80% {
+				-webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+				transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+			}
+
+			to {
+				-webkit-transform: scale3d(1, 1, 1);
+				transform: scale3d(1, 1, 1);
+			}
+		}
+
+		.mysticky-welcomebar-attention-tada.animation-start .mysticky-welcomebar-btn a {
+			-webkit-animation-name: tada;
+			animation-name: tada;
+		}
+		
+		@-webkit-keyframes heartBeat {
+			0% {
+				-webkit-transform: scale(1);
+				transform: scale(1);
+			}
+
+			14% {
+				-webkit-transform: scale(1.3);
+				transform: scale(1.3);
+			}
+
+			28% {
+				-webkit-transform: scale(1);
+				transform: scale(1);
+			}
+
+			42% {
+				-webkit-transform: scale(1.3);
+				transform: scale(1.3);
+			}
+
+			70% {
+				-webkit-transform: scale(1);
+				transform: scale(1);
+			}
+		}
+
+		@keyframes heartBeat {
+			0% {
+				-webkit-transform: scale(1);
+				transform: scale(1);
+			}
+
+			14% {
+				-webkit-transform: scale(1.3);
+				transform: scale(1.3);
+			}
+
+			28% {
+				-webkit-transform: scale(1);
+				transform: scale(1);
+			}
+
+			42% {
+				-webkit-transform: scale(1.3);
+				transform: scale(1.3);
+			}
+
+			70% {
+				-webkit-transform: scale(1);
+				transform: scale(1);
+			}
+		}
+
+		.mysticky-welcomebar-attention-heartbeat.animation-start .mysticky-welcomebar-btn a {
+		  -webkit-animation-name: heartBeat;
+		  animation-name: heartBeat;
+		  -webkit-animation-duration: 1.3s;
+		  animation-duration: 1.3s;
+		  -webkit-animation-timing-function: ease-in-out;
+		  animation-timing-function: ease-in-out;
+		}
+		
+		@-webkit-keyframes wobble {
+			from {
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+
+			15% {
+				-webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+				transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+			}
+
+			30% {
+				-webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+				transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+			}
+
+			45% {
+				-webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+				transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+			}
+
+			60% {
+				-webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+				transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+			}
+
+			75% {
+				-webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+				transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+			}
+
+			to {
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+		}
+
+		@keyframes wobble {
+			from {
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+
+			15% {
+				-webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+				transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+			}
+
+			30% {
+				-webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+				transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+			}
+
+			45% {
+				-webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+				transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+			}
+
+			60% {
+				-webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+				transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+			}
+
+			75% {
+				-webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+				transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+			}
+
+			to {
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+		}
+		
+		.mysticky-welcomebar-attention-wobble.animation-start .mysticky-welcomebar-btn a {
+			-webkit-animation-name: wobble;
+			animation-name: wobble;
+		}
+
+		/* 210824 */
+		@media only screen and (min-width: 481px) {
+			.mysticky-welcomebar-fixed-wrap.mysticky-welcomebar-position-left {
+				justify-content: flex-start;
+			}
+			.mysticky-welcomebar-fixed-wrap.mysticky-welcomebar-position-center {
+				justify-content: center;
+			}
+			.mysticky-welcomebar-fixed-wrap.mysticky-welcomebar-position-right  {
+				justify-content: flex-end;
+			}
+			.mysticky-welcomebar-fixed-wrap.mysticky-welcomebar-position-left .mysticky-welcomebar-content,
+			.mysticky-welcomebar-fixed-wrap.mysticky-welcomebar-position-center .mysticky-welcomebar-content,
+			.mysticky-welcomebar-fixed-wrap.mysticky-welcomebar-position-right .mysticky-welcomebar-content {
+				flex: unset;
+			}
+		}
+		
+		@media only screen and (min-width: 768px) {
+			.mysticky-welcomebar-display-desktop.mysticky-welcomebar-entry-effect-fade.entry-effect {
+				opacity: 1;
+			}
+			.mysticky-welcomebar-display-desktop.mysticky-welcomebar-entry-effect-none.entry-effect {
+				display: block;
+			}
+			.mysticky-welcomebar-display-desktop.mysticky-welcomebar-position-top.mysticky-welcomebar-fixed ,
+			.mysticky-welcomebar-display-desktop.mysticky-welcomebar-position-top.mysticky-welcomebar-entry-effect-slide-in.entry-effect.mysticky-welcomebar-fixed {
+				top: 0;			
+			}
+			.mysticky-welcomebar-display-desktop.mysticky-welcomebar-position-bottom.mysticky-welcomebar-fixed ,
+			.mysticky-welcomebar-display-desktop.mysticky-welcomebar-position-bottom.mysticky-welcomebar-entry-effect-slide-in.entry-effect.mysticky-welcomebar-fixed {
+				bottom: 0;
+			}	
+		}
+		@media only screen and (max-width: 767px) {
+			.mysticky-welcomebar-display-mobile.mysticky-welcomebar-entry-effect-fade.entry-effect {
+				opacity: 1;
+			}
+			.mysticky-welcomebar-display-mobile.mysticky-welcomebar-entry-effect-none.entry-effect {
+				display: block;
+			}
+			.mysticky-welcomebar-display-mobile.mysticky-welcomebar-position-top.mysticky-welcomebar-fixed ,
+			.mysticky-welcomebar-display-mobile.mysticky-welcomebar-position-top.mysticky-welcomebar-entry-effect-slide-in.entry-effect.mysticky-welcomebar-fixed {
+				top: 0;
+			}
+			.mysticky-welcomebar-display-mobile.mysticky-welcomebar-position-bottom.mysticky-welcomebar-fixed ,
+			.mysticky-welcomebar-display-mobile.mysticky-welcomebar-position-bottom.mysticky-welcomebar-entry-effect-slide-in.entry-effect.mysticky-welcomebar-fixed {
+				bottom: 0;
+			}
+			/*.mysticky-welcomebar-fixed.mysticky-welcomebar-showx-desktop .mysticky-welcomebar-close {
+				display: none;
+			}
+			.mysticky-welcomebar-fixed.mysticky-welcomebar-showx-mobile .mysticky-welcomebar-close {
+				display: inline-block;
+			}*/
+			.mysticky-welcomebar-fixed.mysticky-welcomebar-btn-desktop .mysticky-welcomebar-btn {
+				display: none;
+			}
+			.mysticky-welcomebar-fixed.mysticky-welcomebar-btn-mobile .mysticky-welcomebar-btn {
+				display: block;
+				/*margin-top: 10px;*/
+			}
+		}
+		@media only screen and (max-width: 480px) {
+
+			.mysticky-welcomebar-fixed-wrap {padding: 15px 35px 10px 10px; flex-wrap:wrap;}
+			.mysticky-welcomebar-fixed.front-site .mysticky-welcomebar-fixed-wrap {
+				padding: 15px 20px 10px 20px;
+				flex-direction: column;
+			}
+			/*.welcombar-contact-lead .mysticky-welcomebar-fixed-wrap {flex-wrap: wrap; justify-content: center;}*/
+			
+
+			.mysticky-welcomebar-fixed .mysticky-welcomebar-btn {
+				padding-left: 10px;
+			}
+			.mysticky-welcomebar-fixed.mysticky-welcomebar-btn-mobile.front-site .mysticky-welcomebar-btn {margin-left: 0; text-align: center;}
+		}
+
+
+		body.mysticky-welcomebar-apper #wpadminbar{
+			z-index:99999999;
+		}
+
+		.mysticky-welcomebar-fixed .mystickymenu-front.mysticky-welcomebar-lead-content {
+			display: flex;
+			width: auto;
+			margin: 0 0px 0 10px;
+		}
+
+		.mystickymenu-front.mysticky-welcomebar-lead-content input[type="text"], .mystickymenu-front.mysticky-welcomebar-lead-content input[type="email"] {
+			font-size: 12px;
+			padding: 7px 5px;
+			min-width: 50%;
+			border: 0;
+			width:auto;
+            display: flex;
+		}
+
+		.mystickymenu-front.mysticky-welcomebar-lead-content input[type="text"]:focus, .mystickymenu-front.mysticky-welcomebar-lead-content input[type="email"]:focus {
+			outline: unset;
+			box-shadow: unset;
+		}
+
+		.mysticky-welcomebar-content .input-error {
+			color: #ff0000;
+			font-style: normal;
+			font-family: inherit;
+			font-size: 12px;
+			display: block;
+		}
+
+		.mysticky-welcomebar-fixed.mysticky-site-front .mysticky-welcomebar-btn.contact-lead-button {
+		  margin-left: 0;
+		}
+		.morphext > .morphext__animated {
+		  display: inline-block;
+		}
+		
+		.mysticky-welcomebar-btn a {
+			outline: none !important;
+			cursor: pointer;
+			position: relative;
+		}		
+		.mysticky-welcomebar-hover-effect-border1 {
+			position: relative;
+		}
+		.mysticky-welcomebar-hover-effect-border1 a { 
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		.mysticky-welcomebar-hover-effect-border1:before,
+		.mysticky-welcomebar-hover-effect-border1:after {
+			position: absolute;
+			content: "";
+			height: 0%;
+			width: 2px;
+			background: #000;
+		}
+		.mysticky-welcomebar-hover-effect-border1:before {
+			right: 0;
+			top: 0;
+			transition: all 0.1s ease;
+			z-index: 1 !important;
+		}
+		.mysticky-welcomebar-hover-effect-border1:after {
+			left: 0;
+			bottom: 0;
+			transition: all 0.1s 0.2s ease;
+		}
+		.mysticky-welcomebar-hover-effect-border1:hover:before {
+			transition: all 0.1s 0.2s ease;
+			height: 100%;
+		}
+		.mysticky-welcomebar-hover-effect-border1:hover:after {
+			transition: all 0.1s ease;
+			height: 100%;
+		}
+		.mysticky-welcomebar-hover-effect-border1 a:before,
+		.mysticky-welcomebar-hover-effect-border1 a:after {
+			position: absolute;
+			content: "";
+			background: #000;
+		}
+		.mysticky-welcomebar-hover-effect-border1 a:before {
+			left: 0;
+			top: 0;
+			width: 0%;
+			height: 2px;
+			transition: all 0.1s 0.1s ease;
+		}
+		.mysticky-welcomebar-hover-effect-border1 a:after {
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 2px;
+		}
+		.mysticky-welcomebar-hover-effect-border1 a:hover:before {
+			width: 100%;
+		}
+
+		.mysticky-welcomebar-hover-effect-border2 a {
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		.mysticky-welcomebar-hover-effect-border2:before,
+		.mysticky-welcomebar-hover-effect-border2:after {
+			position: absolute;
+			content: "";
+			right: 0px;
+			transition: all 0.3s ease;
+			border-radius: 4px;
+			z-index: 99;
+		}
+		.mysticky-welcomebar-hover-effect-border2:before {
+			width: 2px;
+		}
+		.mysticky-welcomebar-hover-effect-border2:after {
+			width: 0%;
+			height: 2px;
+		}
+		.mysticky-welcomebar-hover-effect-border2:hover:before {
+			height: 29px;
+		}
+		.mysticky-welcomebar-hover-effect-border2:hover:after {
+			width: 86px;
+		}
+		.mysticky-welcomebar-hover-effect-border2 a:before,
+		.mysticky-welcomebar-hover-effect-border2 a:after {
+			position: absolute;
+			content: "";
+			left: 0;
+			bottom: 0;
+			transition: all 0.3s ease;
+			z-index: 0 !important;
+		}
+		.mysticky-welcomebar-hover-effect-border2 a:before {
+			width: 2px;
+			height: 0%;
+		}
+		.mysticky-welcomebar-hover-effect-border2 a:after {
+			width: 0%;
+			height: 2px;
+		}
+		.mysticky-welcomebar-hover-effect-border2 a:hover:before {
+			height: 100%;
+		}
+		.mysticky-welcomebar-hover-effect-border2 a:hover:after {
+			width: 100%; 
+		}
+		.mysticky-welcomebar-hover-effect-border3 a {
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		.mysticky-welcomebar-hover-effect-border3:before,
+		.mysticky-welcomebar-hover-effect-border3:after {
+			position: absolute;
+			content: "";
+			right: 0px;
+			transition: all 0.3s ease;
+			z-index: 99;
+		}
+		.mysticky-welcomebar-hover-effect-border3:before {
+			height: 14px;
+			width: 2px;
+		}
+		.mysticky-welcomebar-hover-effect-border3:after {
+			width: 14px;
+			height: 2px;
+		}
+		.mysticky-welcomebar-hover-effect-border3:hover:before {
+			height: 29px;
+		}
+		.mysticky-welcomebar-hover-effect-border3:hover:after {
+			width: 86px;
+		}
+		.mysticky-welcomebar-hover-effect-border3 a:before,
+		.mysticky-welcomebar-hover-effect-border3 a:after {
+			position: absolute;
+			content: "";
+			left: 0;
+			bottom: 0;
+			transition: all 0.3s ease;
+			z-index: 0 !important;
+		}
+		.mysticky-welcomebar-hover-effect-border3 a:before {
+			width: 2px;
+			height: 50%;
+		}
+		.mysticky-welcomebar-hover-effect-border3 a:after {
+			width: 14px;
+			height: 2px;
+		}
+		.mysticky-welcomebar-hover-effect-border3 a:hover:before {
+			height: 100%;
+		}
+		.mysticky-welcomebar-hover-effect-border3 a:hover:after {
+			width: 100%;
+		}
+		.mysticky-welcomebar-hover-effect-border4 a {
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		.mysticky-welcomebar-hover-effect-border4:before,
+		.mysticky-welcomebar-hover-effect-border4:after {
+			position: absolute;
+			content: "";
+			right: 0px;
+			bottom: 0px ;
+			transition: all 0.3s ease;
+			z-index: 99;
+		}
+		.mysticky-welcomebar-hover-effect-border4:before {
+			height: 14px;
+			width: 2px;
+		}
+		.mysticky-welcomebar-hover-effect-border4:after {
+			width: 14px;
+			height: 2px;
+		}
+		.mysticky-welcomebar-hover-effect-border4:hover:before {
+			height: 29px;
+		}
+		.mysticky-welcomebar-hover-effect-border4:hover:after {
+			width: 86px;
+		}
+		.mysticky-welcomebar-hover-effect-border4 a:before,
+		.mysticky-welcomebar-hover-effect-border4 a:after {
+			position: absolute;
+			content: "";
+			left: 0;
+			top: 0;
+			transition: all 0.3s ease;
+		}
+		.mysticky-welcomebar-hover-effect-border4 a:before {
+			width: 2px;
+			height: 50%;
+		}
+		.mysticky-welcomebar-hover-effect-border4 a:after {
+			width: 14px;
+			height: 2px;
+		}
+		.mysticky-welcomebar-hover-effect-border4 a:hover:before {
+			height: 100%;
+		}
+		.mysticky-welcomebar-hover-effect-border4 a:hover:after {
+			width: 100%;
+		}
+
+		.mysticky-welcomebar-hover-effect-fill1 a {
+			z-index: 1;
+		}
+		.mysticky-welcomebar-hover-effect-fill1 a:after {
+			position: absolute;
+			content: "";
+			width: 0;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: -1;
+		}
+		.mysticky-welcomebar-hover-effect-fill1 a:hover:after {
+			width: 100%;
+		}
+		.mysticky-welcomebar-hover-effect-fill1 a:active {
+			top: 2px;
+		}
+		.mysticky-welcomebar-hover-effect-fill2 a {
+			z-index: 1;
+		}
+		.mysticky-welcomebar-hover-effect-fill2 a:after {
+			position: absolute;
+			content: "";
+			width: 0;
+			height: 100%;
+			top: 0;
+			left: 0;
+			direction: rtl;
+			z-index: -1;
+			transition: all 0.3s ease;
+		}
+		.mysticky-welcomebar-hover-effect-fill2 a:hover:after {
+			left: auto;
+			right: 0;
+			width: 100%;
+		}
+		.mysticky-welcomebar-hover-effect-fill2 a:active {
+			top: 2px;
+		}
+		.mysticky-welcomebar-hover-effect-fill3 a {
+			border: 0px solid #000;
+			z-index: 1;
+		}
+		.mysticky-welcomebar-hover-effect-fill3 a:after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 0;
+			bottom: 0;
+			left: 0;
+			z-index: -1;
+			transition: all 0.3s ease;
+		}
+		.mysticky-welcomebar-hover-effect-fill3 a:hover:after {
+			top: 0;
+			height: 100%;
+		}
+		.mysticky-welcomebar-hover-effect-fill3 a:active {
+			top: 2px;
+		}
+		.mysticky-welcomebar-hover-effect-fill4 a {
+			z-index: 1;
+		}
+		.mysticky-welcomebar-hover-effect-fill4 a:after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 0;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			transition: all 0.3s ease;
+		}
+		.mysticky-welcomebar-hover-effect-fill4 a:hover:after {
+			top: auto;
+			bottom: 0;
+			height: 100%;
+		}
+		.mysticky-welcomebar-hover-effect-fill4 a:active {
+			top: 2px;
+		}
+		.mysticky-welcomebar-hover-effect-fill5 a {
+			border: 0px solid #000;
+			z-index: 3;
+		}
+		.mysticky-welcomebar-hover-effect-fill5 a:after {
+			position: absolute;
+			content: "";
+			width: 0;
+			height: 100%;
+			top: 0;
+			right: 0;
+			z-index: -1;
+			transition: all 0.3s ease;
+		}
+		.mysticky-welcomebar-hover-effect-fill5 a:hover:after {
+			left: 0;
+			width: 100%;
+		}
+		.mysticky-welcomebar-hover-effect-fill5 a:active {
+			top: 2px;
+		}
+
+
+
+	

@@ -1,0 +1,164 @@
+{
+  "slug": "prosper-tx",
+  "name": "Prosper",
+  "seo": {
+    "title": "AC Repair & HVAC Services In Prosper, TX",
+    "description": "HVAC services in Prosper — AC repair, installation & heating. NATE-certified, 85% referral-based, transparent pricing.",
+    "robots": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "canonical": "https://airzoneexperts.com/prosper-tx/",
+    "og": {
+      "og:locale": "en_US",
+      "og:type": "article",
+      "og:title": "AC Repair & HVAC Services In Prosper, TX",
+      "og:description": "HVAC services in Prosper — AC repair, installation & heating. NATE-certified, 85% referral-based, transparent pricing.",
+      "og:url": "https://airzoneexperts.com/prosper-tx/",
+      "og:site_name": "Air Zone Experts",
+      "og:updated_time": "2026-11-06T10:57:08-06:00",
+      "og:image": "https://airzoneexperts.com/wp-content/uploads/How-to-repair-and-replace-Image.jpg",
+      "og:image:secure_url": "https://airzoneexperts.com/wp-content/uploads/How-to-repair-and-replace-Image.jpg",
+      "og:image:width": "1195",
+      "og:image:height": "896",
+      "og:image:alt": "How to repair and replace Image",
+      "og:image:type": "image/jpeg"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "AC Repair & HVAC Services In Prosper, TX",
+      "twitter:description": "HVAC services in Prosper — AC repair, installation & heating. NATE-certified, 85% referral-based, transparent pricing.",
+      "twitter:image": "https://airzoneexperts.com/wp-content/uploads/How-to-repair-and-replace-Image.jpg",
+      "twitter:label1": "Time to read",
+      "twitter:data1": "Less than a minute"
+    }
+  },
+  "heroImage": "/wp-content/uploads/How-to-repair-and-replace-Image.jpg",
+  "heroTitleHtml": "<h1>AC Repair &amp; HVAC Services in Prosper, TX</h1>",
+  "heroIntroHtml": "<p>Prosper’s population has nearly tripled in the last decade, with master-planned communities like Windsong Ranch and Star Trail bringing a steady stream of brand-new HVAC systems online along the Dallas North Tollway and Highway 380 — and getting the sizing right on a new build matters just as much as servicing an older system closer to town. Air Zone Experts has spent more than 20 years as a family-owned, veteran-owned HVAC company handling both correctly.</p>",
+  "servicesIntroHtml": "<h2>Our Residential and Commercial HVAC Services in Prosper</h2>\n<p><span>Air Zone Experts offers comprehensive heating and cooling solutions for both </span><a href=\"/hvac-contractor/\">residential HVAC services</a><span> and </span><a href=\"/commercial-hvac/\">commercial HVAC services</a><span> designed to keep your Prosper </span><span>home or business comfortable in every season.</span></p>",
+  "acHeadingHtml": "<h4>Air Conditioning Services in Prosper, TX</h4>",
+  "acCards": [
+    {
+      "title": "Air Conditioning",
+      "href": "/air-conditioning-repair-service/",
+      "html": "<p>Cooling service for Prosper homes in Windsong Ranch, Star Trail, and nearby communities, from new-system maintenance to full replacements.</p>"
+    },
+    {
+      "title": "Emergency HVAC Services",
+      "href": "/emergency-hvac-service/",
+      "html": "<p>Prosper families can call our <a href=\"/emergency-hvac-service/\">emergency heating and AC repair team</a> when a system shuts down without warning.</p>"
+    },
+    {
+      "title": "Air Conditioning Repair",
+      "href": "/air-conditioning-repair-service/",
+      "html": "<p>Even newer Prosper homes need AC repair for early component failures, refrigerant leaks, and zoning control problems.</p>"
+    },
+    {
+      "title": "Air Conditioning Replacement",
+      "href": "/air-conditioning-installation/",
+      "html": "<p>Prosper AC replacements feature high-efficiency systems designed for spacious floor plans and multiple zones.</p>"
+    },
+    {
+      "title": "Air Duct Repair & Replacement",
+      "href": "/air-duct-repair-replacement/",
+      "html": "<p>Our <a href=\"/air-duct-repair-replacement/\">Prosper ductwork repair</a> fixes installation shortcuts, leaky connections, and airflow problems in newer homes.</p>"
+    }
+  ],
+  "heatingHeadingHtml": "<h4>Heating Services in Prosper, TX</h4>",
+  "heatingCards": [
+    {
+      "title": "Heating",
+      "href": "/heating-service/",
+      "html": "<p>Prosper’s larger homes often run two heating systems, and we maintain, repair, and replace both furnaces and heat pumps.</p>"
+    },
+    {
+      "title": "Heater Repair",
+      "href": "/heating-service/",
+      "html": "<p>We provide <a href=\"/heating-service/\">Prosper furnace and heat pump repair</a> for ignition failures, short cycling, and uneven heating between floors.</p>"
+    },
+    {
+      "title": "Heater Replacements",
+      "href": "/heating-service/",
+      "html": "<p>Our <a href=\"/heating-service/\">heating replacement in Prosper</a> includes efficient furnaces and heat pumps matched to each home’s zones.</p>"
+    },
+    {
+      "title": "Heater Installation",
+      "href": "/heating-service/",
+      "html": "<p>We complete <a href=\"/heating-service/\">Prosper heater installations</a> for custom builds, additions, and upgrades with careful system design.</p>"
+    }
+  ],
+  "servingHtml": "<h2>Serving Prosper</h2>\n<p>We handle HVAC projects throughout Prosper’s established and brand-new master-planned communities. Our NATE-certified technicians provide expert heating and cooling solutions for this thriving town’s modern homes.</p>\n<p><strong>Prosper Fun Fact:</strong> Living up to its name, Prosper’s population increased over 400% in two decades while maintaining its “Where Everyone Matters” small-town feel!</p>",
+  "mapEmbedSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106783.37099635099!2d-96.89767889934284!3d33.24081836516421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c3f677146866f%3A0x19e803820966f487!2sProsper%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1772188137673!5m2!1sen!2sin",
+  "reviewsHtml": "<h2>Customer Reviews</h2>\n<p>See what our satisfied Prosper customers say with over 400 five-star ratings as Little Elm’s top HVAC contractor. Read our <a href=\"/reviews/\">reviews</a> to learn why families throughout Prosper, TX trust Air Zone Experts.</p>",
+  "projectsHtml": "<style>body:not(.et-fb) .et_pb_section:has(.azx-projects-slot):not(:has(.azx-projects)){display:none!important}</style>\n<div class=\"azx-projects-slot\"></div>",
+  "faqGroups": [
+    {
+      "titleHtml": "<h3>HVAC Services in Prosper</h3>",
+      "items": [
+        {
+          "q": "What does Air Zone Experts cover in Prosper?",
+          "a": "<p>Complete coverage in Prosper includes: air conditioning repair and replacement, air duct repair and replacement, heating service (furnace repair, heater replacement, heater installation), and 24/7 emergency response.</p>"
+        },
+        {
+          "q": "Is emergency AC repair available on holidays in Prosper?",
+          "a": "<p>Yes. Emergency service runs 24 hours a day, every day, throughout Prosper.</p>"
+        },
+        {
+          "q": "What factors affect HVAC repair cost in Prosper?",
+          "a": "<p>The age of your system, the specific part that failed, and how complex the repair is all play a role — a refrigerant leak costs differently than a blower motor. Our technicians diagnose the issue on-site and hand you a firm number on the spot, so you know exactly what you’re paying for before we start.</p>"
+        }
+      ]
+    },
+    {
+      "titleHtml": "<h3>Company &amp; Credentials</h3>",
+      "items": [
+        {
+          "q": "Should I ask for proof of license and insurance in Prosper?",
+          "a": "<p>Yes, always — it’s the easiest way to protect yourself before any work starts. Air Zone Experts provides proof of state licensing and insurance on request, and owner Adrian Racovei also holds NATE and EPA Section 608 certifications.</p>"
+        },
+        {
+          "q": "How long-standing is Air Zone Experts' presence in Prosper?",
+          "a": "<p>2008 is when we opened as a family-owned, veteran-owned company, growing alongside Prosper as it’s become one of the fastest-growing towns in North Texas.</p>"
+        },
+        {
+          "q": "Why do Prosper homeowners keep coming back to Air Zone Experts?",
+          "a": "<p>Because 85% of our business comes from referrals — word travels fast when 400+ five-star reviews and honest pricing back it up.</p>"
+        }
+      ]
+    },
+    {
+      "titleHtml": "<h3>Maintenance &amp; Repairs</h3>",
+      "items": [
+        {
+          "q": "Is annual HVAC maintenance enough in Prosper?",
+          "a": "<p>Twice-a-year service is the sweet spot — a spring tune-up before cooling season and a fall check before heating season.</p>"
+        },
+        {
+          "q": "How long are HVAC service appointments in Prosper?",
+          "a": "<p>Appointments usually run one to three hours, occasionally longer for more involved repairs. If a specific part needs to be ordered, we’ll let you know upfront and get it resolved as fast as possible.</p>"
+        },
+        {
+          "q": "What's included in a routine HVAC maintenance visit in Prosper?",
+          "a": "<p>A full inspection of refrigerant levels, electrical connections, airflow, and filters, plus a check of thermostat calibration. It’s a chance to catch small issues in Prosper’s newer systems before they become bigger ones.</p>"
+        }
+      ]
+    },
+    {
+      "titleHtml": "<h3>Coverage &amp; Equipment</h3>",
+      "items": [
+        {
+          "q": "Do you service homes in Prosper's master-planned communities like Windsong Ranch and Star Trail?",
+          "a": "<p>Yes. We install and service HVAC systems throughout Prosper’s newer communities, including Windsong Ranch and Star Trail, as well as homes closer to historic downtown Prosper.</p>"
+        },
+        {
+          "q": "Do you serve areas near the Dallas North Tollway and Highway 380 in Prosper?",
+          "a": "<p>Yes. Prosper’s growth has followed those two corridors closely, and we cover homes and businesses along both.</p>"
+        },
+        {
+          "q": "What's a reliable AC brand for Prosper?",
+          "a": "<p>We carry authorized Trane dealer status and know that lineup best, but we install and service all major brands, sized correctly for the North Texas climate.</p>"
+        }
+      ]
+    }
+  ],
+  "contactHtml": "<h2>Contact Air Zone Experts</h2>\n<p>Ready to experience the Air Zone Experts difference? Contact our <a href=\"/contact-hvac-installer/\">HVAC company </a>today for fast, reliable service in Prosper. Call (214) 430-9059 for immediate assistance.</p>",
+  "bodyClass": "wp-singular page-template-default page page-id-20251114165655 page-child parent-pageid-38014 custom-background wp-theme-Divi wp-child-theme-Astoundz et-tb-has-template et-tb-has-body et-tb-has-footer dbdb_divi_2_4_up desktop et_button_no_icon et_pb_button_helper_class et_non_fixed_nav et_show_nav et_secondary_nav_enabled et_secondary_nav_only_menu et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_cover_background et_pb_gutter et_pb_gutters2 et_pb_pagebuilder_layout et_divi_theme et-db"
+}

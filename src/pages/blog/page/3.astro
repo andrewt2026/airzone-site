@@ -1,0 +1,263 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+const seo = {
+  "title": "HVAC Tips & Resources Blog | Air Zone Experts",
+  "description": "HVAC tips, maintenance guides & expert advice from Air Zone Experts. Stay comfortable year-round in North Texas.",
+  "robots": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+  "canonical": "https://airzoneexperts.com/blog/",
+  "og": {
+    "og:locale": "en_US",
+    "og:type": "article",
+    "og:title": "HVAC Tips & Resources Blog | Air Zone Experts",
+    "og:description": "HVAC tips, maintenance guides & expert advice from Air Zone Experts. Stay comfortable year-round in North Texas.",
+    "og:url": "https://airzoneexperts.com/blog/",
+    "og:site_name": "Air Zone Experts",
+    "og:updated_time": "2026-03-24T11:00:04-05:00",
+    "og:image": "https://airzoneexperts.com/wp-content/uploads/air-zone-experts-featured-image.jpg",
+    "og:image:secure_url": "https://airzoneexperts.com/wp-content/uploads/air-zone-experts-featured-image.jpg",
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:image:alt": "air zone experts HVAC services",
+    "og:image:type": "image/jpeg"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:title": "HVAC Tips & Resources Blog | Air Zone Experts",
+    "twitter:description": "HVAC tips, maintenance guides & expert advice from Air Zone Experts. Stay comfortable year-round in North Texas.",
+    "twitter:image": "https://airzoneexperts.com/wp-content/uploads/air-zone-experts-featured-image.jpg",
+    "twitter:label1": "Time to read",
+    "twitter:data1": "1 minute"
+  }
+};
+const bodyClass = "paged wp-singular page-template-default page page-id-24650 page-child parent-pageid-24606 custom-background paged-3 page-paged-3 wp-theme-Divi wp-child-theme-Astoundz et-tb-has-template et-tb-has-body et-tb-has-footer dbdb_divi_2_4_up desktop et_button_no_icon et_pb_button_helper_class et_non_fixed_nav et_show_nav et_secondary_nav_enabled et_secondary_nav_only_menu et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_divi_theme et-db";
+const __c0 = "\nvar DIVI = {\"item_count\":\"%d Item\",\"items_count\":\"%d Items\"};\nvar et_builder_utils_params = {\"condition\":{\"diviTheme\":true,\"extraTheme\":false},\"scrollLocations\":[\"app\",\"top\"],\"builderScrollLocations\":{\"desktop\":\"app\",\"tablet\":\"app\",\"phone\":\"app\"},\"onloadScrollLocation\":\"app\",\"builderType\":\"fe\"};\nvar et_frontend_scripts = {\"builderCssContainerPrefix\":\"#et-boc\",\"builderCssLayoutPrefix\":\"#et-boc .et-l\"};\nvar et_pb_custom = {\"ajaxurl\":\"/wp-admin/admin-ajax.php\",\"images_uri\":\"/wp-content/themes/Divi/images\",\"builder_images_uri\":\"/wp-content/themes/Divi/includes/builder/images\",\"et_frontend_nonce\":\"84fe6afe93\",\"subscription_failed\":\"Please, check the fields below to make sure you entered the correct information.\",\"et_ab_log_nonce\":\"429b9fb377\",\"fill_message\":\"Please, fill in the following fields:\",\"contact_error_message\":\"Please, fix the following errors:\",\"invalid\":\"Invalid email\",\"captcha\":\"Captcha\",\"prev\":\"Prev\",\"previous\":\"Previous\",\"next\":\"Next\",\"wrong_captcha\":\"You entered the wrong number in captcha.\",\"wrong_checkbox\":\"Checkbox\",\"ignore_waypoints\":\"no\",\"is_divi_theme_used\":\"1\",\"widget_search_selector\":\".widget_search\",\"ab_tests\":[],\"is_ab_testing_active\":\"\",\"page_id\":\"24650\",\"unique_test_id\":\"\",\"ab_bounce_rate\":\"5\",\"is_cache_plugin_active\":\"yes\",\"is_shortcode_tracking\":\"\",\"tinymce_uri\":\"/wp-content/themes/Divi/includes/builder/frontend-builder/assets/vendors\",\"accent_color\":\"#070f60\",\"waypoints_options\":[]};\nvar et_pb_box_shadow_elements = [];\n//# sourceURL=divi-custom-script-js-extra\n";
+const __c1 = "\nvar mejsL10n = {\"language\":\"en\",\"strings\":{\"mejs.download-file\":\"Download File\",\"mejs.install-flash\":\"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https://get.adobe.com/flashplayer/\",\"mejs.fullscreen\":\"Fullscreen\",\"mejs.play\":\"Play\",\"mejs.pause\":\"Pause\",\"mejs.time-slider\":\"Time Slider\",\"mejs.time-help-text\":\"Use Left/Right Arrow keys to advance one second, Up/Down arrows to advance ten seconds.\",\"mejs.live-broadcast\":\"Live Broadcast\",\"mejs.volume-help-text\":\"Use Up/Down Arrow keys to increase or decrease volume.\",\"mejs.unmute\":\"Unmute\",\"mejs.mute\":\"Mute\",\"mejs.volume-slider\":\"Volume Slider\",\"mejs.video-player\":\"Video Player\",\"mejs.audio-player\":\"Audio Player\",\"mejs.captions-subtitles\":\"Captions/Subtitles\",\"mejs.captions-chapters\":\"Chapters\",\"mejs.none\":\"None\",\"mejs.afrikaans\":\"Afrikaans\",\"mejs.albanian\":\"Albanian\",\"mejs.arabic\":\"Arabic\",\"mejs.belarusian\":\"Belarusian\",\"mejs.bulgarian\":\"Bulgarian\",\"mejs.catalan\":\"Catalan\",\"mejs.chinese\":\"Chinese\",\"mejs.chinese-simplified\":\"Chinese (Simplified)\",\"mejs.chinese-traditional\":\"Chinese (Traditional)\",\"mejs.croatian\":\"Croatian\",\"mejs.czech\":\"Czech\",\"mejs.danish\":\"Danish\",\"mejs.dutch\":\"Dutch\",\"mejs.english\":\"English\",\"mejs.estonian\":\"Estonian\",\"mejs.filipino\":\"Filipino\",\"mejs.finnish\":\"Finnish\",\"mejs.french\":\"French\",\"mejs.galician\":\"Galician\",\"mejs.german\":\"German\",\"mejs.greek\":\"Greek\",\"mejs.haitian-creole\":\"Haitian Creole\",\"mejs.hebrew\":\"Hebrew\",\"mejs.hindi\":\"Hindi\",\"mejs.hungarian\":\"Hungarian\",\"mejs.icelandic\":\"Icelandic\",\"mejs.indonesian\":\"Indonesian\",\"mejs.irish\":\"Irish\",\"mejs.italian\":\"Italian\",\"mejs.japanese\":\"Japanese\",\"mejs.korean\":\"Korean\",\"mejs.latvian\":\"Latvian\",\"mejs.lithuanian\":\"Lithuanian\",\"mejs.macedonian\":\"Macedonian\",\"mejs.malay\":\"Malay\",\"mejs.maltese\":\"Maltese\",\"mejs.norwegian\":\"Norwegian\",\"mejs.persian\":\"Persian\",\"mejs.polish\":\"Polish\",\"mejs.portuguese\":\"Portuguese\",\"mejs.romanian\":\"Romanian\",\"mejs.russian\":\"Russian\",\"mejs.serbian\":\"Serbian\",\"mejs.slovak\":\"Slovak\",\"mejs.slovenian\":\"Slovenian\",\"mejs.spanish\":\"Spanish\",\"mejs.swahili\":\"Swahili\",\"mejs.swedish\":\"Swedish\",\"mejs.tagalog\":\"Tagalog\",\"mejs.thai\":\"Thai\",\"mejs.turkish\":\"Turkish\",\"mejs.ukrainian\":\"Ukrainian\",\"mejs.vietnamese\":\"Vietnamese\",\"mejs.welsh\":\"Welsh\",\"mejs.yiddish\":\"Yiddish\"}};\n//# sourceURL=mediaelement-core-js-before\n";
+const __c2 = "\nvar _wpmejsSettings = {\"pluginPath\":\"/wp-includes/js/mediaelement/\",\"classPrefix\":\"mejs-\",\"stretching\":\"responsive\",\"audioShortcodeLibrary\":\"mediaelement\",\"videoShortcodeLibrary\":\"mediaelement\"};\n//# sourceURL=mediaelement-js-extra\n";
+const __c3 = "\nvar et_pb_sticky_elements = {\"et_pb_section_2_tb_body\":{\"id\":\"et_pb_section_2_tb_body\",\"selector\":\".et_pb_section_2_tb_body\",\"position\":{\"desktop\":\"top\",\"tablet\":\"none\",\"phone\":\"none\"},\"topOffset\":\"0px\",\"bottomOffset\":\"0px\",\"topLimit\":\"none\",\"bottomLimit\":\"none\",\"offsetSurrounding\":\"on\",\"transition\":\"on\",\"styles\":{\"module_alignment\":{\"desktop\":\"\",\"tablet\":\"\",\"phone\":\"\"},\"positioning\":\"relative\"},\"stickyStyles\":{\"position_origin_r\":\"top_left\",\"horizontal_offset\":\"\",\"vertical_offset\":\"\"}},\"et_pb_column_1\":{\"id\":\"et_pb_column_1\",\"selector\":\".et_pb_column_1\",\"position\":{\"desktop\":\"top\",\"tablet\":\"none\",\"phone\":\"none\"},\"topOffset\":\"5px\",\"bottomOffset\":\"0px\",\"topLimit\":\"none\",\"bottomLimit\":\"row\",\"offsetSurrounding\":\"on\",\"transition\":\"on\",\"styles\":{\"positioning\":\"relative\"},\"stickyStyles\":{\"position_origin_r\":\"top_left\",\"horizontal_offset\":\"\",\"vertical_offset\":\"\"}}};\n//# sourceURL=et-builder-modules-script-sticky-js-extra\n";
+---
+<BaseLayout seo={seo} bodyClass={bodyClass} pageCss="/css/pages/blog-page-3.css">
+
+    
+<div class="et-l et-l--body">
+			<div class="et_builder_inner_content et_pb_gutters2">
+		<div class="et_pb_section et_pb_section_0_tb_body et_pb_with_background et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_body">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_0_tb_body et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_0_tb_body mini-head et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><nav aria-label="breadcrumbs" class="rank-math-breadcrumb"><p><a href="">Home</a><span class="separator"> | </span><a href="/about-hvac-company/">About Us</a><span class="separator"> | </span><a href="/blog/">Blog</a><span class="separator"> | </span><span class="last">Page 3</span></p></nav></div>
+			</div><div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_1_tb_body mini-head et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h1>Blog</h1></div>
+			</div><div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_2_tb_body mini-head et_pb_text_align_center et_pb_bg_layout_dark">
+				
+				
+				
+				
+				
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_2_tb_body et_pb_sticky_module et_pb_with_background et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_1_tb_body et_pb_equal_columns et_pb_gutters1">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_1_tb_body ds-vertical-align et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_3_tb_body mini-head et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>Schedule Appointment</h2></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_2_tb_body et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module dsm_button dsm_button_0_tb_body et_pb_bg_layout_dark">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<div class="et_pb_button_module_wrappers dsm_button_0_wrapper et_pb_button_alignment_right et_pb_button_alignment_tablet_center et_pb_button_alignment_phone_left et_pb_module">
+				<a class="et_pb_button et_pb_button_one et_pb_bg_layout_dark dsm-none" href="/contact-hvac-installer/" data-dsm-lightbox-id="dsm_button_one_lightbox dsm_button_0_tb_body">Book Now</a><a class="et_pb_button et_pb_button_two et_pb_bg_layout_dark dsm-none" href="tel:2144309059" data-dsm-lightbox-id="dsm_button_two_lightbox dsm_button_0_tb_body">Call Now 214-430-9059</a>
+			</div>
+				</div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_3_tb_body et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_2_tb_body">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_3_tb_body et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_post_content et_pb_post_content_0_tb_body">
+				
+				
+				
+				
+				<div class="et-l et-l--post">
+			<div class="et_builder_inner_content et_pb_gutters3"><div class="et_pb_section et_pb_section_0 et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0 et_pb_gutters2">
+				<div class="et_pb_column et_pb_column_2_3 et_pb_column_0 et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_blog_0 et_pb_blog_grid_wrapper et_pb_bg_layout_light">
+					<div class="et_pb_blog_grid clearfix">
+					
+					
+					
+					
+					<div class="et_pb_ajax_pagination_container">
+						<div class="et_pb_salvattore_content" data-columns>
+			<article id="post-20251114165948" class="et_pb_post clearfix et_pb_blog_item_0_0 post-20251114165948 post type-post status-publish format-standard has-post-thumbnail hentry category-heating-ventilation-and-air-conditioning">
+
+				<div class="et_pb_image_container"><a href="/how-often-should-i-have-my-ac-serviced/" class="entry-featured-image-url"><img loading="lazy" fetchpriority="high" decoding="async" src="/wp-content/uploads/how-often-should-1024x576-1-400x250.webp" alt="How Often Should I Have My AC Serviced?" class srcset="/wp-content/uploads/how-often-should-1024x576-1.webp 479w, /wp-content/uploads/how-often-should-1024x576-1-400x250.webp 480w " sizes="(max-width:479px) 479px, 100vw " width="400" height="250" title="Blog 1" /></a></div>
+														<h3 class="entry-title">
+													<a href="/how-often-should-i-have-my-ac-serviced/">How Often Should I Have My AC Serviced?</a>
+											</h3>
+				
+					<p class="post-meta"><span class="published">Oct 25, 2025</span> | <a href="/heating-ventilation-and-air-conditioning/" rel="tag">Heating Ventilation And Air Conditioning​</a></p><div class="post-content"><div class="post-content-inner"><p>When the Texas heat kicks in, you rely on your air conditioning (AC) to keep your home cool and comfortable....</p>
+</div><a href="/how-often-should-i-have-my-ac-serviced/" class="more-link">read more</a></div>			
+			</article>
+				
+			<article id="post-20251114165951" class="et_pb_post clearfix et_pb_blog_item_0_1 post-20251114165951 post type-post status-publish format-standard has-post-thumbnail hentry category-heating-ventilation-and-air-conditioning">
+
+				<div class="et_pb_image_container"><a href="/how-often-should-you-service-your-ac-the-ultimate-ac-maintenance-guide/" class="entry-featured-image-url"><img loading="lazy" decoding="async" src="/wp-content/uploads/Furnace-Installation-in-Little-Elm-TX-400x250.png" alt="How Often Should You Service Your AC? The Ultimate AC Maintenance Guide" class srcset="/wp-content/uploads/Furnace-Installation-in-Little-Elm-TX.png 479w, /wp-content/uploads/Furnace-Installation-in-Little-Elm-TX-400x250.png 480w " sizes="(max-width:479px) 479px, 100vw " width="400" height="250" title="Blog 2" /></a></div>
+														<h3 class="entry-title">
+													<a href="/how-often-should-you-service-your-ac-the-ultimate-ac-maintenance-guide/">How Often Should You Service Your AC? The Ultimate AC Maintenance Guide</a>
+											</h3>
+				
+					<p class="post-meta"><span class="published">Sep 22, 2025</span> | <a href="/heating-ventilation-and-air-conditioning/" rel="tag">Heating Ventilation And Air Conditioning​</a></p><div class="post-content"><div class="post-content-inner"><p>How Often Should You Service Your AC? The Ultimate AC Maintenance Guide When was the last time you scheduled...</p>
+</div><a href="/how-often-should-you-service-your-ac-the-ultimate-ac-maintenance-guide/" class="more-link">read more</a></div>			
+			</article>
+				
+			<article id="post-20251114165952" class="et_pb_post clearfix et_pb_blog_item_0_2 post-20251114165952 post type-post status-publish format-standard has-post-thumbnail hentry category-heating-ventilation-and-air-conditioning">
+
+				<div class="et_pb_image_container"><a href="/air-conditioning-repair-services-in-frisco-tx-keep-your-home-cool-and-comfortable/" class="entry-featured-image-url"><img loading="lazy" decoding="async" src="/wp-content/uploads/air-conditioning-repair-frisco-1024x576-1-400x250.webp" alt="Air Conditioning Repair Services in Frisco, TX: Keep Your Home Cool and Comfortable" class srcset="/wp-content/uploads/air-conditioning-repair-frisco-1024x576-1.webp 479w, /wp-content/uploads/air-conditioning-repair-frisco-1024x576-1-400x250.webp 480w " sizes="(max-width:479px) 479px, 100vw " width="400" height="250" title="Blog 3" /></a></div>
+														<h3 class="entry-title">
+													<a href="/air-conditioning-repair-services-in-frisco-tx-keep-your-home-cool-and-comfortable/">Air Conditioning Repair Services in Frisco, TX: Keep Your Home Cool and Comfortable</a>
+											</h3>
+				
+					<p class="post-meta"><span class="published">Sep 15, 2025</span> | <a href="/heating-ventilation-and-air-conditioning/" rel="tag">Heating Ventilation And Air Conditioning​</a></p><div class="post-content"><div class="post-content-inner"><p>Living in Frisco, TX, means dealing with long, hot summers where a functioning air conditioning system...</p>
+</div><a href="/air-conditioning-repair-services-in-frisco-tx-keep-your-home-cool-and-comfortable/" class="more-link">read more</a></div>			
+			</article>
+				</div><div><div class="pagination clearfix">
+	<div class="alignleft"></div>
+	<div class="alignright"><a href="/blog/page/2/?et_blog">Next Entries »</a></div>
+</div></div></div>
+					</div>
+					 
+				</div>
+			</div><div class="et_pb_column et_pb_column_1_3 et_pb_column_1 et_pb_sticky_module et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_sidebar_0 et_pb_widget_area clearfix et_pb_widget_area_left et_pb_bg_layout_light et_pb_sidebar_no_border">
+				
+				
+				
+				
+				<div id="block-4" class="et_pb_widget widget_block"><h4 class="widgettitle">Recent Post</h4><div class="wp-widget-group__inner-blocks"><ul class="wp-block-latest-posts__list wp-block-latest-posts is-layout-flow wp-block-latest-posts-is-layout-flow"><li><a class="wp-block-latest-posts__post-title" href="/furnace-not-heating/">Furnace Not Heating? A Troubleshooting Guide for North Texas Homes</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="/furnace-repair-texas-handbook/">Furnace Repair in Texas: The Homeowner Handbook</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="/replace-ac-and-furnace-together/">AC and Furnace Replacement: Should You Replace Both Systems at the Same Time?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="/ac-replacement-frisco-tx/">Signs Your AC Needs Replacement in Frisco, TX</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="/best-ac-repair-company-frisco-tx/">Best AC Repair Company in Frisco, TX (2026)</a></li>
+</ul></div></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</div>
+	
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</div>
+
+	    
+<Fragment slot="head">
+<meta name="ti-site-data" content="eyJyIjoiMTowITc6MSEzMDoyIiwibyI6Imh0dHBzOlwvXC9haXJ6b25lZXhwZXJ0cy5jb20/dGktb25saW5lLXVzZXJzLWdvb2dsZT0xJmFtcDtwPSUyRmJsb2clMkZwYWdlJTJGMyUyRiUzRm5vd3Byb2NrZXQlM0QxJmFtcDtfd3Bub25jZT1kM2FmN2I2ZWU0In0=" />
+<link rel="stylesheet" id="mediaelement-css" href="/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17" media="all" />
+<link rel="stylesheet" id="wp-mediaelement-css" href="/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=7.1.4" media="all" />
+<script is:inline id="divi-custom-script-js-extra" set:html={__c0}></script>
+<script is:inline id="mediaelement-core-js-before" set:html={__c1}></script>
+<script is:inline id="mediaelement-core-js" src="/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17"></script>
+<script is:inline id="mediaelement-migrate-js" src="/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=7.1.4"></script>
+<script is:inline id="mediaelement-js-extra" set:html={__c2}></script>
+<script is:inline id="wp-mediaelement-js" src="/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=7.1.4"></script>
+<script is:inline id="salvattore-js" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore.js?ver=4.27.6"></script>
+<script is:inline id="easypiechart-js" src="/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart.js?ver=4.27.6"></script>
+<script is:inline id="et-builder-modules-script-sticky-js-extra" set:html={__c3}></script>
+</Fragment>
+</BaseLayout>

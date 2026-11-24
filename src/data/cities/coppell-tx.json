@@ -1,0 +1,164 @@
+{
+  "slug": "coppell-tx",
+  "name": "Coppell",
+  "seo": {
+    "title": "HVAC Services In Coppell, TX | AC & Furnace Repair",
+    "description": "HVAC services in Coppell — AC repair, installation & heating. Veteran-owned, NATE-certified, upfront pricing.",
+    "robots": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "canonical": "https://airzoneexperts.com/coppell-tx/",
+    "og": {
+      "og:locale": "en_US",
+      "og:type": "article",
+      "og:title": "HVAC Services In Coppell, TX | AC & Furnace Repair",
+      "og:description": "HVAC services in Coppell — AC repair, installation & heating. Veteran-owned, NATE-certified, upfront pricing.",
+      "og:url": "https://airzoneexperts.com/coppell-tx/",
+      "og:site_name": "Air Zone Experts",
+      "og:updated_time": "2026-11-06T10:56:52-06:00",
+      "og:image": "https://airzoneexperts.com/wp-content/uploads/IMG-1024-1-1.jpeg",
+      "og:image:secure_url": "https://airzoneexperts.com/wp-content/uploads/IMG-1024-1-1.jpeg",
+      "og:image:width": "1024",
+      "og:image:height": "612",
+      "og:image:alt": "IMG 1024 (1)",
+      "og:image:type": "image/jpeg"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "HVAC Services In Coppell, TX | AC & Furnace Repair",
+      "twitter:description": "HVAC services in Coppell — AC repair, installation & heating. Veteran-owned, NATE-certified, upfront pricing.",
+      "twitter:image": "https://airzoneexperts.com/wp-content/uploads/IMG-1024-1-1.jpeg",
+      "twitter:label1": "Time to read",
+      "twitter:data1": "Less than a minute"
+    }
+  },
+  "heroImage": "/wp-content/uploads/IMG-1024-1-1.jpeg",
+  "heroTitleHtml": "<h1>HVAC Services in Coppell, TX</h1>",
+  "heroIntroHtml": "<p>From the farmers market and historic charm of Old Town Coppell to the modern subdivisions built up since the city’s 1955 incorporation, Coppell’s homes span nearly seven decades of construction styles — which means no two HVAC systems here are quite the same. Air Zone Experts has spent more than 20 years as a family-owned, veteran-owned HVAC company sizing and servicing systems correctly across that whole range, always with upfront pricing and NATE-certified technicians.</p>",
+  "servicesIntroHtml": "<h2>Our Residential and Commercial HVAC Services in Coppell</h2>\n<p><span>Air Zone Experts offers comprehensive heating and cooling solutions for both </span><a href=\"/hvac-contractor/\">residential HVAC services</a><span> and </span><a href=\"/commercial-hvac/\">commercial HVAC services</a><span> designed to keep your Coppell </span><span>home or business comfortable in every season.</span></p>",
+  "acHeadingHtml": "<h4>Air Conditioning Services in Coppell, TX</h4>",
+  "acCards": [
+    {
+      "title": "Air Conditioning",
+      "href": "/air-conditioning-repair-service/",
+      "html": "<p>Cooling service for Coppell homes near Old Town, Andrew Brown Park, and Cypress Waters, from seasonal maintenance to brand-new system installs.</p>"
+    },
+    {
+      "title": "Emergency HVAC Services",
+      "href": "/emergency-hvac-service/",
+      "html": "<p>Our <a href=\"/emergency-hvac-service/\">emergency HVAC technicians</a> serve Coppell around the clock, so a dead AC or failed furnace doesn’t ruin a night at home.</p>"
+    },
+    {
+      "title": "Air Conditioning Repair",
+      "href": "/air-conditioning-repair-service/",
+      "html": "<p>Two-story Coppell homes often struggle upstairs, so our AC repairs track down refrigerant leaks, weak capacitors, and frozen evaporator coils.</p>"
+    },
+    {
+      "title": "Air Conditioning Replacement",
+      "href": "/air-conditioning-installation/",
+      "html": "<p>Coppell homeowners upgrading 15- to 20-year-old systems get Manual J sizing and a choice of high-SEER2 equipment before anything is installed.</p>"
+    },
+    {
+      "title": "Air Duct Repair & Replacement",
+      "href": "/air-duct-repair-replacement/",
+      "html": "<p>Our <a href=\"/air-duct-repair-replacement/\">duct sealing and replacement work</a> helps Coppell homes push conditioned air into every room instead of a hot attic.</p>"
+    }
+  ],
+  "heatingHeadingHtml": "<h4>Heating Services in Coppell, TX</h4>",
+  "heatingCards": [
+    {
+      "title": "Heating",
+      "href": "/heating-service/",
+      "html": "<p>Gas furnace and heat pump care for Coppell families, including annual safety checks, carbon monoxide testing, repairs, and replacements.</p>"
+    },
+    {
+      "title": "Heater Repair",
+      "href": "/heating-service/",
+      "html": "<p>Coppell families rely on our <a href=\"/heating-service/\">no-heat repair visits</a> for ignition failures, tripped limit switches, thermostat issues, and noisy blowers.</p>"
+    },
+    {
+      "title": "Heater Replacements",
+      "href": "/heating-service/",
+      "html": "<p>We provide <a href=\"/heating-service/\">heating system replacement in Coppell</a> using high-efficiency furnaces and heat pumps sized to each home’s layout.</p>"
+    },
+    {
+      "title": "Heater Installation",
+      "href": "/heating-service/",
+      "html": "<p>Our <a href=\"/heating-service/\">professional heater installation</a> team handles Coppell new builds, additions, and full upgrades with code-compliant venting.</p>"
+    }
+  ],
+  "servingHtml": "<h2>Serving Coppell</h2>\n<p>We deliver expert HVAC services throughout Coppell’s diverse neighborhoods and commercial districts. Our NATE-certified technicians provide dependable heating and cooling solutions for this progressive community in the heart of the Dallas-Fort Worth metroplex.</p>\n<p><b>Coppell Fun Fact:</b> Named after rancher George Coppell in the 1880s, this vibrant city has transformed into a master-planned community known for its award-winning schools and commitment to sustainability. Coppell’s tree-lined streets and strong sense of community make it one of DFW’s most desirable places to live!</p>",
+  "mapEmbedSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53563.724213611094!2d-97.02351650576811!3d32.95806425829166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c29392775ee31%3A0xce442bcc373769fd!2sCoppell%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1772187130908!5m2!1sen!2sin",
+  "reviewsHtml": "<h2>Customer Reviews</h2>\n<p>See what our satisfied Coppell customers say with over 400 five-star ratings as Little Elm’s top HVAC contractor. Read our <a href=\"/reviews/\">reviews</a> to learn why families throughout Coppell, TX trust Air Zone Experts.</p>",
+  "projectsHtml": "<style>body:not(.et-fb) .et_pb_section:has(.azx-projects-slot):not(:has(.azx-projects)){display:none!important}</style>\n<div class=\"azx-projects-slot\"></div>",
+  "faqGroups": [
+    {
+      "titleHtml": "<h3>HVAC Services in Coppell</h3>",
+      "items": [
+        {
+          "q": "What's included in your HVAC services in the Coppell area?",
+          "a": "<p>Coppell residents get full-spectrum HVAC coverage from us: AC repair, AC replacement and installation, duct repair and replacement, complete heating service, and around-the-clock emergency availability.</p>"
+        },
+        {
+          "q": "Is there a 24/7 HVAC repair company in Coppell, TX?",
+          "a": "<p>Yes — our emergency line is staffed 24/7, including nights, weekends, and holidays, anywhere in Coppell.</p>"
+        },
+        {
+          "q": "What should I expect from your pricing approach in Coppell?",
+          "a": "<p>You’ll get a written price before any repair begins, based on an actual look at your system. You approve the cost before we lift a wrench, and it doesn’t change once we start.</p>"
+        }
+      ]
+    },
+    {
+      "titleHtml": "<h3>Company &amp; Credentials</h3>",
+      "items": [
+        {
+          "q": "Is Air Zone Experts properly licensed to work in Coppell, TX?",
+          "a": "<p>Fully licensed, fully insured. Adrian Racovei, the owner, is personally NATE-certified and EPA Section 608-certified.</p>"
+        },
+        {
+          "q": "How many years of experience does Air Zone Experts have in Coppell, TX?",
+          "a": "<p>We’ve been family-owned and veteran-owned since 2008, serving Coppell since well before it became one of the DFW area’s most sought-after suburbs.</p>"
+        },
+        {
+          "q": "Is Air Zone Experts a local company, not a national chain serving Coppell?",
+          "a": "<p>Yes. As a family-owned, veteran-owned company, backed by 400+ five-star reviews, most of them from customer referrals.</p>"
+        }
+      ]
+    },
+    {
+      "titleHtml": "<h3>Maintenance &amp; Repairs</h3>",
+      "items": [
+        {
+          "q": "Can you service HVAC systems in the older homes near Old Town Coppell as well as newer subdivisions?",
+          "a": "<p>Yes. Old Town Coppell’s homes and the newer subdivisions built since the 1970s and 80s each have different HVAC needs, and we size and service both correctly.</p>"
+        },
+        {
+          "q": "When should I schedule AC maintenance in Coppell, TX?",
+          "a": "<p>We recommend two check-ups a year — spring for the AC, fall for the furnace, so nothing gets caught off guard.</p>"
+        },
+        {
+          "q": "What's the average repair time for an HVAC issue for Coppell homes?",
+          "a": "<p>Most repairs take one to three hours once we’re on-site. More complex issues or backordered parts can extend that, but we’ll always tell you upfront what to expect.</p>"
+        }
+      ]
+    },
+    {
+      "titleHtml": "<h3>Coverage &amp; Equipment</h3>",
+      "items": [
+        {
+          "q": "Do you serve homes near DFW Airport and along SH 121 in Coppell?",
+          "a": "<p>Yes. Coppell’s location near DFW Airport and SH 121 puts most of the city within our standard service area.</p>"
+        },
+        {
+          "q": "Can someone come look at my AC today in Coppell, TX?",
+          "a": "<p>Often, yes. The earlier you call, the better our odds of finishing the job that same day.</p>"
+        },
+        {
+          "q": "What furnace and AC brands are available in Coppell, TX?",
+          "a": "<p>Our authorized Trane dealership is a point of pride. though our technicians service every other major brand just as comfortably.</p>"
+        }
+      ]
+    }
+  ],
+  "contactHtml": "<h2>Contact Air Zone Experts</h2>\n<p>Ready to experience the Air Zone Experts difference? Contact our <a href=\"/contact-hvac-installer/\">HVAC company </a>today for fast, reliable service in Coppell. Call (214) 430-9059 for immediate assistance.</p>",
+  "bodyClass": "wp-singular page-template-default page page-id-20251114165647 page-child parent-pageid-38014 custom-background wp-theme-Divi wp-child-theme-Astoundz et-tb-has-template et-tb-has-body et-tb-has-footer dbdb_divi_2_4_up desktop et_button_no_icon et_pb_button_helper_class et_non_fixed_nav et_show_nav et_secondary_nav_enabled et_secondary_nav_only_menu et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_cover_background et_pb_gutter et_pb_gutters2 et_pb_pagebuilder_layout et_divi_theme et-db"
+}

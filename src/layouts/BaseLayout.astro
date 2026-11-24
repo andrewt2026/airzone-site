@@ -1,0 +1,45 @@
+---
+// Shared page shell. Every page passes its own SEO + Divi body classes.
+import SiteHead from '../components/SiteHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import SiteScripts from '../components/SiteScripts.astro';
+
+export interface Seo {
+  title: string; description?: string | null; robots?: string | null; canonical?: string | null;
+  og?: Record<string, string>; twitter?: Record<string, string>;
+}
+interface Props { seo: Seo; bodyClass?: string; pageCss?: string; schema?: object[]; }
+const { seo, bodyClass = '', pageCss, schema = [] } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+    <title>{seo.title}</title>
+  {seo.description && <meta name="description" content={seo.description} />}
+  {seo.robots && <meta name="robots" content={seo.robots} />}
+  {seo.canonical && <link rel="canonical" href={seo.canonical} />}
+  {Object.entries(seo.og ?? {}).map(([k, v]) => <meta property={k} content={v} />)}
+  {Object.entries(seo.twitter ?? {}).map(([k, v]) => <meta name={k} content={v} />)}
+  {schema.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  <SiteHead />
+  <slot name="head" />
+  {pageCss && <link rel="stylesheet" href={pageCss} />}
+</head>
+<body class={bodyClass}>
+  <div id="page-container">
+    <div id="et-boc" class="et-boc">
+      <Header />
+      <div id="et-main-area">
+        <div id="main-content">
+          <slot />
+        </div>
+        <Footer />
+      </div>
+    </div>
+  </div>
+  <SiteScripts />
+  <slot name="end" />
+</body>
+</html>

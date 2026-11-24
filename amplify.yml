@@ -1,0 +1,26 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - nvm install 22
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+  customHeaders:
+    - pattern: '/wp-content/**'
+      headers:
+        - key: Cache-Control
+          value: 'public, max-age=31536000, immutable'
+    - pattern: '/css/**'
+      headers:
+        - key: Cache-Control
+          value: 'public, max-age=86400'

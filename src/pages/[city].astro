@@ -1,0 +1,599 @@
+---
+// City / service-area page template. One JSON file per city in src/data/cities/.
+// To add a city: copy an existing JSON file, rename it to the new slug, rewrite the copy.
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+export function getStaticPaths() {
+  const files = import.meta.glob('../data/cities/*.json', { eager: true });
+  return Object.values(files).map((mod: any) => ({ params: { city: mod.default.slug }, props: { city: mod.default } }));
+}
+const { city } = Astro.props as any;
+const heroStyle = city.heroImage ? `background-image:url(${city.heroImage})` : undefined;
+const offsets = city.faqGroups.map((_: any, i: number) =>
+  city.faqGroups.slice(0, i).reduce((n: number, g: any) => n + g.items.length, 0));
+const strip = (h: string) => h.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+const faqSchema = {
+  '@context': 'https://schema.org', '@type': 'FAQPage',
+  mainEntity: city.faqGroups.flatMap((g: any) => g.items.map((it: any) => ({
+    '@type': 'Question', name: strip(it.q), acceptedAnswer: { '@type': 'Answer', text: strip(it.a) } }))),
+};
+const __c0 = "\n.az-trust{background:#070f60;padding:36px 20px;font-family:Montserrat,Helvetica,Arial,sans-serif}\n.az-trust-grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:22px;align-items:center}\n.az-trust-item{display:flex;align-items:center;gap:12px}\n.az-trust-item img{width:46px;height:46px;object-fit:contain;flex:none}\n.az-trust-t{color:#fff;font-weight:700;font-size:15px;line-height:1.25}\n.az-trust-s{color:#e6e9ff;font-size:14px;line-height:1.3;margin-top:2px}\n@media (max-width:767px){\n.az-trust{padding:26px 14px}\n.az-trust .az-trust-grid{grid-template-columns:1fr 1fr;gap:20px 12px;align-items:start}\n.az-trust .az-trust-item{flex-direction:column;text-align:center;gap:6px}\n.az-trust .az-trust-item img{width:38px;height:38px}\n.az-trust .az-trust-t{font-size:14px}\n.az-trust .az-trust-s{font-size:12.5px}\n.az-trust .az-trust-item:last-child{grid-column:1/-1}\n}\n";
+const __c1 = ".et_pb_accordion_0_tb_body .et_pb_toggle_open .et_pb_toggle_title:before {\n\tdisplay: block !important;\n\tcontent: \"\\e04f\";\n}";
+const __c2 = "jQuery(function($){\n  var closeableAccordion = $('.et_pb_accordion_0_tb_body');\n  closeableAccordion.addClass('divibooster-accordion-closeable');\n  closeableAccordion.find('.et_pb_toggle_title').click(function(event){\n    var toggle = $(this).closest('.et_pb_toggle');\n    var accordion = toggle.closest('.et_pb_accordion');\n    var isOpen = toggle.hasClass('et_pb_toggle_open');\n\n    if (accordion.hasClass('et_pb_accordion_toggling')) {\n      event.preventDefault();\n      event.stopPropagation();\n      return;\n    }\n\n    if (isOpen) {\n      // Prevent Divi's delegated accordion handler from closing the other\n      // open items when multi-open is active.\n      event.preventDefault();\n      event.stopPropagation();\n      accordion.addClass('et_pb_accordion_toggling');\n      toggle.find('.et_pb_toggle_content').slideUp(700, function() {\n        toggle.toggleClass('et_pb_toggle_open et_pb_toggle_close');\n      });\n      setTimeout(function(){\n        accordion.removeClass('et_pb_accordion_toggling');\n      }, 750);\n    }\n  });\n});";
+const __c3 = ".et_pb_accordion_1_tb_body .et_pb_toggle_open .et_pb_toggle_title:before {\n\tdisplay: block !important;\n\tcontent: \"\\e04f\";\n}";
+const __c4 = "jQuery(function($){\n  var closeableAccordion = $('.et_pb_accordion_1_tb_body');\n  closeableAccordion.addClass('divibooster-accordion-closeable');\n  closeableAccordion.find('.et_pb_toggle_title').click(function(event){\n    var toggle = $(this).closest('.et_pb_toggle');\n    var accordion = toggle.closest('.et_pb_accordion');\n    var isOpen = toggle.hasClass('et_pb_toggle_open');\n\n    if (accordion.hasClass('et_pb_accordion_toggling')) {\n      event.preventDefault();\n      event.stopPropagation();\n      return;\n    }\n\n    if (isOpen) {\n      // Prevent Divi's delegated accordion handler from closing the other\n      // open items when multi-open is active.\n      event.preventDefault();\n      event.stopPropagation();\n      accordion.addClass('et_pb_accordion_toggling');\n      toggle.find('.et_pb_toggle_content').slideUp(700, function() {\n        toggle.toggleClass('et_pb_toggle_open et_pb_toggle_close');\n      });\n      setTimeout(function(){\n        accordion.removeClass('et_pb_accordion_toggling');\n      }, 750);\n    }\n  });\n});";
+const __c5 = ".et_pb_accordion_2_tb_body .et_pb_toggle_open .et_pb_toggle_title:before {\n\tdisplay: block !important;\n\tcontent: \"\\e04f\";\n}";
+const __c6 = "jQuery(function($){\n  var closeableAccordion = $('.et_pb_accordion_2_tb_body');\n  closeableAccordion.addClass('divibooster-accordion-closeable');\n  closeableAccordion.find('.et_pb_toggle_title').click(function(event){\n    var toggle = $(this).closest('.et_pb_toggle');\n    var accordion = toggle.closest('.et_pb_accordion');\n    var isOpen = toggle.hasClass('et_pb_toggle_open');\n\n    if (accordion.hasClass('et_pb_accordion_toggling')) {\n      event.preventDefault();\n      event.stopPropagation();\n      return;\n    }\n\n    if (isOpen) {\n      // Prevent Divi's delegated accordion handler from closing the other\n      // open items when multi-open is active.\n      event.preventDefault();\n      event.stopPropagation();\n      accordion.addClass('et_pb_accordion_toggling');\n      toggle.find('.et_pb_toggle_content').slideUp(700, function() {\n        toggle.toggleClass('et_pb_toggle_open et_pb_toggle_close');\n      });\n      setTimeout(function(){\n        accordion.removeClass('et_pb_accordion_toggling');\n      }, 750);\n    }\n  });\n});";
+const __c7 = ".et_pb_accordion_3_tb_body .et_pb_toggle_open .et_pb_toggle_title:before {\n\tdisplay: block !important;\n\tcontent: \"\\e04f\";\n}";
+const __c8 = "jQuery(function($){\n  var closeableAccordion = $('.et_pb_accordion_3_tb_body');\n  closeableAccordion.addClass('divibooster-accordion-closeable');\n  closeableAccordion.find('.et_pb_toggle_title').click(function(event){\n    var toggle = $(this).closest('.et_pb_toggle');\n    var accordion = toggle.closest('.et_pb_accordion');\n    var isOpen = toggle.hasClass('et_pb_toggle_open');\n\n    if (accordion.hasClass('et_pb_accordion_toggling')) {\n      event.preventDefault();\n      event.stopPropagation();\n      return;\n    }\n\n    if (isOpen) {\n      // Prevent Divi's delegated accordion handler from closing the other\n      // open items when multi-open is active.\n      event.preventDefault();\n      event.stopPropagation();\n      accordion.addClass('et_pb_accordion_toggling');\n      toggle.find('.et_pb_toggle_content').slideUp(700, function() {\n        toggle.toggleClass('et_pb_toggle_open et_pb_toggle_close');\n      });\n      setTimeout(function(){\n        accordion.removeClass('et_pb_accordion_toggling');\n      }, 750);\n    }\n  });\n});";
+const __c9 = "\n\t\t\t\tvar et_link_options_data = [{\"class\":\"et_pb_blurb_0_tb_body\",\"url\":\"\\/air-conditioning-repair-service\\/\",\"target\":\"_self\"},{\"class\":\"et_pb_blurb_1_tb_body\",\"url\":\"\\/emergency-hvac-service\\/\",\"target\":\"_self\"},{\"class\":\"et_pb_blurb_2_tb_body\",\"url\":\"\\/air-conditioning-repair-service\\/\",\"target\":\"_self\"},{\"class\":\"et_pb_blurb_3_tb_body\",\"url\":\"\\/air-conditioning-installation\\/\",\"target\":\"_self\"},{\"class\":\"et_pb_blurb_4_tb_body\",\"url\":\"\\/air-duct-repair-replacement\\/\",\"target\":\"_self\"},{\"class\":\"et_pb_blurb_5_tb_body\",\"url\":\"\\/heating-service\\/\",\"target\":\"_self\"},{\"class\":\"et_pb_blurb_6_tb_body\",\"url\":\"\\/heating-service\\/\",\"target\":\"_self\"},{\"class\":\"et_pb_blurb_7_tb_body\",\"url\":\"\\/heating-service\\/\",\"target\":\"_self\"},{\"class\":\"et_pb_blurb_8_tb_body\",\"url\":\"\\/heating-service\\/\",\"target\":\"_self\"}];\n\t\t\t";
+const __c10 = "\nvar DIVI = {\"item_count\":\"%d Item\",\"items_count\":\"%d Items\"};\nvar et_builder_utils_params = {\"condition\":{\"diviTheme\":true,\"extraTheme\":false},\"scrollLocations\":[\"app\",\"top\"],\"builderScrollLocations\":{\"desktop\":\"app\",\"tablet\":\"app\",\"phone\":\"app\"},\"onloadScrollLocation\":\"app\",\"builderType\":\"fe\"};\nvar et_frontend_scripts = {\"builderCssContainerPrefix\":\"#et-boc\",\"builderCssLayoutPrefix\":\"#et-boc .et-l\"};\nvar et_pb_custom = {\"ajaxurl\":\"/wp-admin/admin-ajax.php\",\"images_uri\":\"/wp-content/themes/Divi/images\",\"builder_images_uri\":\"/wp-content/themes/Divi/includes/builder/images\",\"et_frontend_nonce\":\"84fe6afe93\",\"subscription_failed\":\"Please, check the fields below to make sure you entered the correct information.\",\"et_ab_log_nonce\":\"429b9fb377\",\"fill_message\":\"Please, fill in the following fields:\",\"contact_error_message\":\"Please, fix the following errors:\",\"invalid\":\"Invalid email\",\"captcha\":\"Captcha\",\"prev\":\"Prev\",\"previous\":\"Previous\",\"next\":\"Next\",\"wrong_captcha\":\"You entered the wrong number in captcha.\",\"wrong_checkbox\":\"Checkbox\",\"ignore_waypoints\":\"no\",\"is_divi_theme_used\":\"1\",\"widget_search_selector\":\".widget_search\",\"ab_tests\":[],\"is_ab_testing_active\":\"\",\"page_id\":\"20251114165651\",\"unique_test_id\":\"\",\"ab_bounce_rate\":\"5\",\"is_cache_plugin_active\":\"yes\",\"is_shortcode_tracking\":\"\",\"tinymce_uri\":\"/wp-content/themes/Divi/includes/builder/frontend-builder/assets/vendors\",\"accent_color\":\"#070f60\",\"waypoints_options\":[]};\nvar et_pb_box_shadow_elements = [];\n//# sourceURL=divi-custom-script-js-extra\n";
+const __c11 = "\nvar et_pb_sticky_elements = {\"et_pb_section_2_tb_body\":{\"id\":\"et_pb_section_2_tb_body\",\"selector\":\".et_pb_section_2_tb_body\",\"position\":{\"desktop\":\"top\",\"tablet\":\"none\",\"phone\":\"none\"},\"topOffset\":\"0px\",\"bottomOffset\":\"0px\",\"topLimit\":\"none\",\"bottomLimit\":\"none\",\"offsetSurrounding\":\"on\",\"transition\":\"on\",\"styles\":{\"module_alignment\":{\"desktop\":\"\",\"tablet\":\"\",\"phone\":\"\"},\"positioning\":\"relative\"},\"stickyStyles\":{\"position_origin_r\":\"top_left\",\"horizontal_offset\":\"\",\"vertical_offset\":\"\"}}};\n//# sourceURL=et-builder-modules-script-sticky-js-extra\n";
+---
+<BaseLayout seo={city.seo} bodyClass={city.bodyClass} pageCss="/css/pages/city.css" schema={[faqSchema]}>
+
+    
+<div class="et-l et-l--body">
+			<div class="et_builder_inner_content et_pb_gutters2">
+		<div class="et_pb_section et_pb_section_0_tb_body et_pb_with_background et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_body custom_row et_pb_equal_columns et_pb_gutters1">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_0_tb_body col-left second-on-mobile et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_code et_pb_code_0_tb_body">
+				
+				
+				
+				
+				<div class="et_pb_code_inner"><nav aria-label="breadcrumbs" class="rank-math-breadcrumb"><p><a href="">Home</a><span class="separator"> | </span><span class="last"><Fragment set:html={city.name} /></span></p></nav></div>
+			</div><div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_0_tb_body banner-left et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><Fragment set:html={city.heroTitleHtml} /></div>
+			</div><div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_1_tb_body banner-left et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><Fragment set:html={city.heroIntroHtml} /></div>
+			</div><div class="et_pb_module et_pb_code et_pb_code_1_tb_body">
+				
+				
+				
+				
+				<div class="et_pb_code_inner"><div data-src="https://cdn.trustindex.io/loader.js?c3c90016575f00987d4634b111f"></div></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_1_tb_body first-on-mobile mobile-banner image-full et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column_empty" style={heroStyle}>
+				
+				
+				
+				
+				
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_2_tb_body et_pb_sticky_module et_pb_with_background et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_1_tb_body et_pb_equal_columns et_pb_gutters1">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_2_tb_body ds-vertical-align et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_2_tb_body mini-head et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>Schedule Appointment</h2></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_3_tb_body et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module dsm_button dsm_button_0_tb_body et_pb_bg_layout_dark">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<div class="et_pb_button_module_wrappers dsm_button_0_wrapper et_pb_button_alignment_right et_pb_button_alignment_tablet_center et_pb_button_alignment_phone_left et_pb_module">
+				<a class="et_pb_button et_pb_button_one et_pb_bg_layout_dark dsm-none" href="/contact-hvac-installer/" data-dsm-lightbox-id="dsm_button_one_lightbox dsm_button_0_tb_body">Book Now</a><a class="et_pb_button et_pb_button_two et_pb_bg_layout_dark dsm-none" href="tel:2144309059" data-dsm-lightbox-id="dsm_button_two_lightbox dsm_button_0_tb_body">Call Now 214-430-9059</a>
+			</div>
+				</div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_3_tb_body et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_2_tb_body">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_4_tb_body et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_3_tb_body mini-head et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><Fragment set:html={city.servicesIntroHtml} /></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_3_tb_body et_pb_gutters2">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_5_tb_body et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_4_tb_body mini-head et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><Fragment set:html={city.acHeadingHtml} /></div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_0_tb_body et_clickable et_pb_text_align_left et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href={city.acCards[0].href}><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></a></div>
+					<div class="et_pb_blurb_container">
+						<h4 class="et_pb_module_header"><a href={city.acCards[0].href}><Fragment set:html={city.acCards[0].title} /></a></h4>
+						<div class="et_pb_blurb_description"><Fragment set:html={city.acCards[0].html} /></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_1_tb_body et_clickable et_pb_text_align_left et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href={city.acCards[1].href}><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></a></div>
+					<div class="et_pb_blurb_container">
+						<h4 class="et_pb_module_header"><a href={city.acCards[1].href}><Fragment set:html={city.acCards[1].title} /></a></h4>
+						<div class="et_pb_blurb_description"><Fragment set:html={city.acCards[1].html} /></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_2_tb_body et_clickable et_pb_text_align_left et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href={city.acCards[2].href}><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></a></div>
+					<div class="et_pb_blurb_container">
+						<h4 class="et_pb_module_header"><a href={city.acCards[2].href}><Fragment set:html={city.acCards[2].title} /></a></h4>
+						<div class="et_pb_blurb_description"><Fragment set:html={city.acCards[2].html} /></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_3_tb_body et_clickable et_pb_text_align_left et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href={city.acCards[3].href}><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></a></div>
+					<div class="et_pb_blurb_container">
+						<h4 class="et_pb_module_header"><a href={city.acCards[3].href}><Fragment set:html={city.acCards[3].title} /></a></h4>
+						<div class="et_pb_blurb_description"><Fragment set:html={city.acCards[3].html} /></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_4_tb_body et_clickable et_pb_text_align_left et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href={city.acCards[4].href}><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></a></div>
+					<div class="et_pb_blurb_container">
+						<h4 class="et_pb_module_header"><a href={city.acCards[4].href}><Fragment set:html={city.acCards[4].title} /></a></h4>
+						<div class="et_pb_blurb_description"><Fragment set:html={city.acCards[4].html} /></div>
+					</div>
+				</div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_6_tb_body et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_5_tb_body mini-head et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><Fragment set:html={city.heatingHeadingHtml} /></div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_5_tb_body et_clickable et_pb_text_align_left et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href={city.heatingCards[0].href}><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></a></div>
+					<div class="et_pb_blurb_container">
+						<h4 class="et_pb_module_header"><a href={city.heatingCards[0].href}><Fragment set:html={city.heatingCards[0].title} /></a></h4>
+						<div class="et_pb_blurb_description"><Fragment set:html={city.heatingCards[0].html} /></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_6_tb_body et_clickable et_pb_text_align_left et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href={city.heatingCards[1].href}><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></a></div>
+					<div class="et_pb_blurb_container">
+						<h4 class="et_pb_module_header"><a href={city.heatingCards[1].href}><Fragment set:html={city.heatingCards[1].title} /></a></h4>
+						<div class="et_pb_blurb_description"><Fragment set:html={city.heatingCards[1].html} /></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_7_tb_body et_clickable et_pb_text_align_left et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href={city.heatingCards[2].href}><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></a></div>
+					<div class="et_pb_blurb_container">
+						<h4 class="et_pb_module_header"><a href={city.heatingCards[2].href}><Fragment set:html={city.heatingCards[2].title} /></a></h4>
+						<div class="et_pb_blurb_description"><Fragment set:html={city.heatingCards[2].html} /></div>
+					</div>
+				</div>
+			</div><div class="et_pb_module et_pb_blurb et_pb_blurb_8_tb_body et_clickable et_pb_text_align_left et_pb_blurb_position_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_blurb_content">
+					<div class="et_pb_main_blurb_image"><a href={city.heatingCards[3].href}><span class="et_pb_image_wrap"><span class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon"></span></span></a></div>
+					<div class="et_pb_blurb_container">
+						<h4 class="et_pb_module_header"><a href={city.heatingCards[3].href}><Fragment set:html={city.heatingCards[3].title} /></a></h4>
+						<div class="et_pb_blurb_description"><Fragment set:html={city.heatingCards[3].html} /></div>
+					</div>
+				</div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_4_tb_body et_pb_with_background et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_4_tb_body et_pb_equal_columns et_pb_gutters2">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_7_tb_body ds-vertical-align et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_6_tb_body mini-head et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><Fragment set:html={city.servingHtml} /></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_8_tb_body ds-vertical-align et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_code et_pb_code_2_tb_body">
+				
+				
+				
+				
+				<div class="et_pb_code_inner"><iframe src={city.mapEmbedSrc} width="100%" height="400" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_5_tb_body et_pb_fullwidth_section et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_fullwidth_code et_pb_fullwidth_code_0_tb_body">
+				
+				
+				
+				
+				<div class="et_pb_code_inner"><style is:inline set:html={__c0}></style>
+<div class="az-trust"><div class="az-trust-grid">
+<div class="az-trust-item"><img decoding="async" src="/wp-content/uploads/air-zone-experts-award-winning-service-icon.png" alt="Award-winning HVAC service" width="46" height="46" loading="lazy" /><div><div class="az-trust-t">Award-Winning</div><div class="az-trust-s">#1 HVAC Contractor 2024</div></div></div>
+<div class="az-trust-item"><img decoding="async" src="/wp-content/uploads/air-zone-experts-family-owned-values-icon.png" alt="Family and veteran-owned" width="46" height="46" loading="lazy" /><div><div class="az-trust-t">Family &amp; Veteran-Owned</div><div class="az-trust-s">20+ years in DFW</div></div></div>
+<div class="az-trust-item"><img decoding="async" src="/wp-content/uploads/air-zone-experts-proven-excellence-icon.png" alt="400+ five-star Google reviews" width="46" height="46" loading="lazy" /><div><div class="az-trust-t">400+ 5-Star Reviews</div><div class="az-trust-s">85% referral business</div></div></div>
+<div class="az-trust-item"><img decoding="async" src="/wp-content/uploads/air-zone-experts-expert-technicians-icon.png" alt="NATE and EPA certified technicians" width="46" height="46" loading="lazy" /><div><div class="az-trust-t">NATE &amp; EPA Certified</div><div class="az-trust-s">Expert technicians</div></div></div>
+<div class="az-trust-item"><img decoding="async" src="/wp-content/uploads/air-zone-experts-authorized-trane-dealer-icon.png" alt="Authorized Trane dealer" width="46" height="46" loading="lazy" /><div><div class="az-trust-t">Authorized Trane Dealer</div><div class="az-trust-s">All makes &amp; models</div></div></div>
+</div></div></div>
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_6_tb_body et_pb_with_background et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_5_tb_body">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_9_tb_body et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_7_tb_body mini-head et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><Fragment set:html={city.reviewsHtml} /></div>
+			</div><div class="et_pb_module et_pb_code et_pb_code_3_tb_body">
+				
+				
+				
+				
+				<div class="et_pb_code_inner"><div data-src="https://cdn.trustindex.io/loader.js?1ed0b92648709916de16e0c15ad"></div>
+<div data-src="https://cdn.trustindex.io/loader.js?58de88364d9a9919b346814c76f"></div></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_7_tb_body et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_6_tb_body">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_10_tb_body et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_code et_pb_code_4_tb_body">
+				
+				
+				
+				
+				<div class="et_pb_code_inner"><Fragment set:html={city.projectsHtml} /></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_8_tb_body et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_7_tb_body">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_11_tb_body et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_8_tb_body mini-head et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h2>Frequently Asked Questions</h2></div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_8_tb_body">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_12_tb_body et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_9_tb_body mini-head et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><Fragment set:html={city.faqGroups[0].titleHtml} /></div>
+			</div><div class="et_pb_module et_pb_accordion et_pb_accordion_0_tb_body">{city.faqGroups[0].items.map((it, j) => (
+  <div class={`et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_${offsets[0] + j}_tb_body ${j === 0 ? 'et_pb_toggle_open' : 'et_pb_toggle_close'}`}>
+    <h5 class="et_pb_toggle_title" set:html={it.q} />
+    <div class="et_pb_toggle_content clearfix" set:html={it.a} />
+  </div>
+))}</div><style is:inline set:html={__c1}></style><script is:inline set:html={__c2}></script>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_13_tb_body et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_10_tb_body mini-head et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><Fragment set:html={city.faqGroups[1].titleHtml} /></div>
+			</div><div class="et_pb_module et_pb_accordion et_pb_accordion_1_tb_body">{city.faqGroups[1].items.map((it, j) => (
+  <div class={`et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_${offsets[1] + j}_tb_body ${j === 0 ? 'et_pb_toggle_open' : 'et_pb_toggle_close'}`}>
+    <h5 class="et_pb_toggle_title" set:html={it.q} />
+    <div class="et_pb_toggle_content clearfix" set:html={it.a} />
+  </div>
+))}</div><style is:inline set:html={__c3}></style><script is:inline set:html={__c4}></script>
+			</div>
+				
+				
+				
+				
+			</div><div class="et_pb_row et_pb_row_9_tb_body">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_14_tb_body et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_11_tb_body mini-head et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><Fragment set:html={city.faqGroups[2].titleHtml} /></div>
+			</div><div class="et_pb_module et_pb_accordion et_pb_accordion_2_tb_body">{city.faqGroups[2].items.map((it, j) => (
+  <div class={`et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_${offsets[2] + j}_tb_body ${j === 0 ? 'et_pb_toggle_open' : 'et_pb_toggle_close'}`}>
+    <h5 class="et_pb_toggle_title" set:html={it.q} />
+    <div class="et_pb_toggle_content clearfix" set:html={it.a} />
+  </div>
+))}</div><style is:inline set:html={__c5}></style><script is:inline set:html={__c6}></script>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_15_tb_body et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_12_tb_body mini-head et_pb_text_align_center et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><Fragment set:html={city.faqGroups[3].titleHtml} /></div>
+			</div><div class="et_pb_module et_pb_accordion et_pb_accordion_3_tb_body">{city.faqGroups[3].items.map((it, j) => (
+  <div class={`et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_${offsets[3] + j}_tb_body ${j === 0 ? 'et_pb_toggle_open' : 'et_pb_toggle_close'}`}>
+    <h5 class="et_pb_toggle_title" set:html={it.q} />
+    <div class="et_pb_toggle_content clearfix" set:html={it.a} />
+  </div>
+))}</div><style is:inline set:html={__c7}></style><script is:inline set:html={__c8}></script>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_9_tb_body et_pb_with_background et_section_regular">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_10_tb_body et_pb_equal_columns et_pb_gutters2">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_16_tb_body col-left et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_13_tb_body mini-head et_pb_text_align_left et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><Fragment set:html={city.contactHtml} /></div>
+			</div><div class="et_pb_with_border et_pb_module et_pb_text et_pb_text_14_tb_body mini-head et_pb_text_align_left et_pb_bg_layout_dark">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><h3>Call for immediate assistance</h3>
+</div>
+			</div><div class="et_pb_module dsm_button dsm_button_1_tb_body et_pb_bg_layout_dark">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<div class="et_pb_button_module_wrappers dsm_button_1_wrapper et_pb_module">
+				<a class="et_pb_button et_pb_button_one et_pb_custom_button_icon et_pb_bg_layout_dark dsm-none" href="tel:2144309059" data-icon="" data-dsm-lightbox-id="dsm_button_one_lightbox dsm_button_1_tb_body">(214) 430-9059</a><a class="et_pb_button et_pb_button_two et_pb_bg_layout_dark dsm-none" href="/contact-hvac-installer/" data-dsm-lightbox-id="dsm_button_two_lightbox dsm_button_1_tb_body">Schedule online</a>
+			</div>
+				</div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_17_tb_body image-full et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column_empty">
+				
+				
+				
+				
+				
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</div>
+
+	    
+<Fragment slot="head">
+<meta name="ti-site-data" content="eyJyIjoiMTowITc6MSEzMDoyIiwibyI6Imh0dHBzOlwvXC9haXJ6b25lZXhwZXJ0cy5jb20/dGktb25saW5lLXVzZXJzLWdvb2dsZT0xJmFtcDtwPSUyRmFsbGVuLXR4JTJGJTNGbm93cHJvY2tldCUzRDEmYW1wO193cG5vbmNlPWQzYWY3YjZlZTQifQ==" />
+<script is:inline type="text/javascript" set:html={__c9}></script>
+<script is:inline id="divi-custom-script-js-extra" set:html={__c10}></script>
+<script is:inline id="et-builder-modules-script-sticky-js-extra" set:html={__c11}></script>
+</Fragment>
+</BaseLayout>

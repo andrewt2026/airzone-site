@@ -1,0 +1,100 @@
+---
+// Site header (top bar + main nav). Active menu state is set from the current URL.
+const path = Astro.url.pathname;
+const same = (h: string | null) => !!h && (h === path || h === path.replace(/\/$/, ''));
+const menuClass = (base: string, href: string | null, kids: string[] = []) =>
+  same(href) ? `${base} current-menu-item current_page_item`
+  : kids.some(same) ? `${base} current-menu-ancestor current-menu-parent` : base;
+
+---
+<div id="top-header">
+		<div class="container clearfix">
+
+		
+			<div id="et-secondary-menu">
+			<ul id="et-secondary-nav" class="menu"><li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-20251114165986", "/coupon-specials/", [])}><a href="/coupon-specials/">Coupons</a></li>
+<li class={menuClass("open-raq menu-item menu-item-type-custom menu-item-object-custom menu-item-38738", "#", [])}><a href="#">Request a Quote</a></li>
+</ul>			</div>
+
+		</div>
+	</div>
+<header id="main-header" data-height-onload="64">
+		<div class="container clearfix et_menu_container">
+					<div class="logo_container">
+				<span class="logo_helper"></span>
+				<a href="/">
+				<img src="/wp-content/uploads/Air-Zone-Experts-Logo.png" width="93" height="43" alt="Air Zone Experts" id="logo" data-height-percentage="70" />
+				</a>
+			</div>
+					<div id="et-top-navigation" data-height="64" data-fixed-height="60">
+									<nav id="top-menu-nav">
+					<ul id="top-menu" class="nav"><li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-24607", "/about-hvac-company/", ["/reviews/", "/#faq", "/symptom-checker/", "/hvac-contractor/"])}><a href="/about-hvac-company/">About</a>
+<ul class="sub-menu">
+	<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-27356", "/reviews/", [])}><a href="/reviews/">Reviews</a></li>
+	<li class={menuClass("menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-20251114166667", "/#faq", [])}><a href="/#faq">FAQ</a></li>
+	<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-20251114166278", "/symptom-checker/", [])}><a href="/symptom-checker/">Symptom Checker</a></li>
+	<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-20251114166650", "/hvac-contractor/", [])}><a href="/hvac-contractor/">HVAC Contractor</a></li>
+</ul>
+</li>
+<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20251114166657", "/air-conditioning-repair-service/", ["/emergency-hvac-service/", "/air-conditioning-repair-service/", "/air-conditioning-installation/#replacement", "/air-conditioning-installation/", "/air-duct-repair-replacement/"])}><a href="/air-conditioning-repair-service/">Air Conditioning</a>
+<ul class="sub-menu">
+	<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-38121", "/emergency-hvac-service/", [])}><a href="/emergency-hvac-service/">Emergency HVAC Services</a></li>
+	<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-38122", "/air-conditioning-repair-service/", [])}><a href="/air-conditioning-repair-service/">Air Conditioning Repair Service</a></li>
+	<li class={menuClass("menu-item menu-item-type-custom menu-item-object-custom menu-item-20251114166801", "/air-conditioning-installation/#replacement", [])}><a href="/air-conditioning-installation/#replacement">Air Conditioning Replacement</a></li>
+	<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-20251114165570", "/air-conditioning-installation/", [])}><a href="/air-conditioning-installation/">Air Conditioning Installation​</a></li>
+	<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-38124", "/air-duct-repair-replacement/", [])}><a href="/air-duct-repair-replacement/">Air Duct Repair &amp; Replacement</a></li>
+</ul>
+</li>
+<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-20251114166654", "/heating-service/", ["/heating-service/#repair", "/heating-service/#replacement", "/heating-service/#installation"])}><a href="/heating-service/">Heating</a>
+<ul class="sub-menu">
+	<li class={menuClass("menu-item menu-item-type-custom menu-item-object-custom menu-item-20251114166661", "/heating-service/#repair", [])}><a href="/heating-service/#repair">Heater Repair</a></li>
+	<li class={menuClass("menu-item menu-item-type-custom menu-item-object-custom menu-item-20251114166662", "/heating-service/#replacement", [])}><a href="/heating-service/#replacement">Heater Replacements</a></li>
+	<li class={menuClass("menu-item menu-item-type-custom menu-item-object-custom menu-item-20251114166663", "/heating-service/#installation", [])}><a href="/heating-service/#installation">Heater Installation</a></li>
+</ul>
+</li>
+<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-20251114166286", "/coupon-specials/", [])}><a href="/coupon-specials/">Current Specials</a></li>
+<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-20251114166287", "/financing/", [])}><a href="/financing/">Financing</a></li>
+<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-37498", "/blog/", [])}><a href="/blog/">Blog</a></li>
+<li class={menuClass("mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20251114167401", "#", ["#", "/addison-tx/", "/carrollton-tx/", "/coppell-tx/", "#", "/allen-tx/", "/celina-tx/", "/mckinney-tx/", "/prosper-tx/", "#", "/aubrey-tx/", "/denton-tx/", "/lewisville-tx/", "/oak-point-tx/", "/the-colony-tx/"])}><a href="#">Areas We Serve</a>
+<ul class="sub-menu">
+	<li class={menuClass("menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20251114167208", "#", ["/addison-tx/", "/carrollton-tx/", "/coppell-tx/"])}><a href="#">Dallas County</a>
+	<ul class="sub-menu">
+		<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-20251114166883", "/addison-tx/", [])}><a href="/addison-tx/">Addison</a></li>
+		<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-20251114166884", "/carrollton-tx/", [])}><a href="/carrollton-tx/">Carrollton</a></li>
+		<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-20251114166885", "/coppell-tx/", [])}><a href="/coppell-tx/">Coppell</a></li>
+	</ul>
+</li>
+	<li class={menuClass("menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20251114167209", "#", ["/allen-tx/", "/celina-tx/", "/mckinney-tx/", "/prosper-tx/"])}><a href="#">Collin County</a>
+	<ul class="sub-menu">
+		<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-20251114166890", "/allen-tx/", [])}><a href="/allen-tx/">Allen</a></li>
+		<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-20251114166891", "/celina-tx/", [])}><a href="/celina-tx/">Celina</a></li>
+		<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-20251114166893", "/mckinney-tx/", [])}><a href="/mckinney-tx/">McKinney</a></li>
+		<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-20251114166894", "/prosper-tx/", [])}><a href="/prosper-tx/">Prosper</a></li>
+	</ul>
+</li>
+	<li class={menuClass("area_menu_2_col menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20251114167210", "#", ["/aubrey-tx/", "/denton-tx/", "/lewisville-tx/", "/oak-point-tx/", "/the-colony-tx/"])}><a href="#">Denton County</a>
+	<ul class="sub-menu">
+		<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-20251114166897", "/aubrey-tx/", [])}><a href="/aubrey-tx/">Aubrey</a></li>
+		<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-20251114166900", "/denton-tx/", [])}><a href="/denton-tx/">Denton</a></li>
+		<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-20251114166904", "/lewisville-tx/", [])}><a href="/lewisville-tx/">Lewisville</a></li>
+		<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-20251114166906", "/oak-point-tx/", [])}><a href="/oak-point-tx/">Oak Point</a></li>
+		<li class={menuClass("menu-item menu-item-type-post_type menu-item-object-page menu-item-20251114166908", "/the-colony-tx/", [])}><a href="/the-colony-tx/">The Colony</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class={menuClass("menu-phone menu-item menu-item-type-custom menu-item-object-custom menu-item-38729", "tel:2144309059", [])}><a href="tel:2144309059" title="Call for Great Service">214-430-9059</a></li>
+<li class={menuClass("menu-cta menu-item menu-item-type-custom menu-item-object-custom menu-item-37681", "/contact-hvac-installer/", [])}><a href="/contact-hvac-installer/">Schedule Appointment</a></li>
+</ul>					</nav>
+				
+				
+				
+				
+				<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Select Page</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>			</div> 
+		</div> 
+			</header>

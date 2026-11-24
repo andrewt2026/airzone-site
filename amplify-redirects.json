@@ -1,0 +1,132 @@
+[
+  {
+    "source": "/dallas-tx",
+    "target": "/about-hvac-company/",
+    "status": "301"
+  },
+  {
+    "source": "/dallas-tx/",
+    "target": "/about-hvac-company/",
+    "status": "301"
+  },
+  {
+    "source": "/little-elm-tx",
+    "target": "/about-hvac-company/",
+    "status": "301"
+  },
+  {
+    "source": "/little-elm-tx/",
+    "target": "/about-hvac-company/",
+    "status": "301"
+  },
+  {
+    "source": "/savannah-tx",
+    "target": "/about-hvac-company/",
+    "status": "301"
+  },
+  {
+    "source": "/savannah-tx/",
+    "target": "/about-hvac-company/",
+    "status": "301"
+  },
+  {
+    "source": "/texas",
+    "target": "/about-hvac-company/",
+    "status": "301"
+  },
+  {
+    "source": "/texas/",
+    "target": "/about-hvac-company/",
+    "status": "301"
+  },
+  {
+    "source": "/frisco-tx",
+    "target": "/",
+    "status": "301"
+  },
+  {
+    "source": "/frisco-tx/",
+    "target": "/",
+    "status": "301"
+  },
+  {
+    "source": "/hvac-contractor",
+    "target": "/",
+    "status": "301"
+  },
+  {
+    "source": "/hvac-contractor/",
+    "target": "/",
+    "status": "301"
+  },
+  {
+    "source": "/heater-repair",
+    "target": "/heating-service/",
+    "status": "301"
+  },
+  {
+    "source": "/heater-repair/",
+    "target": "/heating-service/",
+    "status": "301"
+  },
+  {
+    "source": "/get-started",
+    "target": "/contact-hvac-installer/",
+    "status": "301"
+  },
+  {
+    "source": "/get-started/",
+    "target": "/contact-hvac-installer/",
+    "status": "301"
+  },
+  {
+    "source": "/feed",
+    "target": "/blog/",
+    "status": "301"
+  },
+  {
+    "source": "/feed/",
+    "target": "/blog/",
+    "status": "301"
+  },
+  {
+    "source": "/sitemap_index.xml",
+    "target": "/sitemap-index.xml",
+    "status": "301"
+  },
+  {
+    "source": "/page-sitemap.xml",
+    "target": "/sitemap-index.xml",
+    "status": "301"
+  },
+  {
+    "source": "/post-sitemap.xml",
+    "target": "/sitemap-index.xml",
+    "status": "301"
+  },
+  {
+    "source": "/category-sitemap.xml",
+    "target": "/sitemap-index.xml",
+    "status": "301"
+  },
+  {
+    "source": "/local-sitemap.xml",
+    "target": "/sitemap-index.xml",
+    "status": "301"
+  },
+  {
+    "source": "/wp-login.php",
+    "target": "/",
+    "status": "301"
+  },
+  {
+    "source": "/wp-admin/<*>",
+    "target": "/",
+    "status": "301"
+  },
+  {
+    "source": "/<*>",
+    "target": "/404.html",
+    "status": "404"
+  }
+]
